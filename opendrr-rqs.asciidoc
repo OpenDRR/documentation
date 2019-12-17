@@ -1,0 +1,2227 @@
+image:media/image1.png[Minerva Intelligence Inc.,width=393,height=76]
+
+== Table of Contents
+
+link:#list-of-figures[List of Figures III]
+
+link:#list-of-tables[List of Tables III]
+
+link:#executive-summary[Executive Summary 1]
+
+link:#general-information[1.0 General Information 2]
+
+link:#project-team[1.1 Project Team 2]
+
+link:#contributors[1.2 Contributors 2]
+
+link:#reviewers[1.3 Reviewers 2]
+
+link:#introduction[2.0 Introduction 3]
+
+link:#background[2.1 Background 3]
+
+link:#business-case[2.2 Business Case 3]
+
+link:#project-scope[2.3 Project Scope 5]
+
+link:#document-outline[2.4 Document Outline 5]
+
+link:#stakeholder-analysis[3.0 Stakeholder Analysis 6]
+
+link:#risk-analyst[3.1 Risk Analyst 7]
+
+link:#emergency-manager[3.2 Emergency Manager 7]
+
+link:#land-use-planner[3.3 Land-Use Planner 7]
+
+link:#financial-risk-manager[3.4 Financial Risk Manager 7]
+
+link:#individual-home-or-business-owner[3.5 Individual Home or Business
+Owner 7]
+
+link:#ontological-approach-to-disaster-risk-reduction[4.0 Ontological
+Approach to Disaster Risk Reduction 7]
+
+link:#vocabularies[4.1 Vocabularies 8]
+
+link:#unisdr---sendai-framework-for-disaster-risk-reduction[4.1.1 UNISDR
+- Sendai Framework for Disaster Risk Reduction 9]
+
+link:#inspire---infrastructure-for-spatial-information-in-the-european-community[4.1.2
+INSPIRE - Infrastructure for Spatial Information in the European
+Community 9]
+
+link:#gem-global-earthquake-model[4.1.3 GEM – Global Earthquake Model
+12]
+
+link:#mover---multi-hazard-open-vulnerability-platform-for-evaluating-risk[4.1.4
+MOVER - Multi-Hazard Open Vulnerability Platform for Evaluating Risk 12]
+
+link:#strategy-for-ontology-taxonomy-development[4.2 Strategy for
+Ontology & Taxonomy Development 12]
+
+link:#influences-for-opendrr-platform-architecture[5.0 Influences for
+OpenDRR Platform Architecture 16]
+
+link:#spatial-data-infrastructure[5.1 Spatial Data Infrastructure 16]
+
+link:#federal-geospatial-platform-government-of-canada[5.1.1 Federal
+Geospatial Platform – Government of Canada 16]
+
+link:#risk-management-platforms[5.2 Risk Management Platforms 17]
+
+link:#openquake-global-earthquake-model[5.2.1 OpenQuake – Global
+Earthquake Model 17]
+
+link:#european-risk-management-platforms[5.2.2 European Risk Management
+Platforms 18]
+
+link:#risk-data-hub-european-commission[5.2.3 Risk Data Hub – European
+Commission 18]
+
+link:#british-columbia-earthquake-risk-portal[5.2.4 British Columbia
+Earthquake Risk Portal 18]
+
+link:#riskscape-new-zealand[5.2.5 RiskScape – New Zealand 19]
+
+link:#opendrr-target-state[6.0 OpenDRR Target State 20]
+
+link:#system-requirements[6.1 System Requirements 22]
+
+link:#functional-requirements[6.2 Functional Requirements 22]
+
+link:#use-case-a-knowledge-capture-by-domain-expert[6.2.1 Use Case A:
+Knowledge Capture By Domain Expert 23]
+
+link:#use-case-b-system-to-system-interoperability[6.2.2 Use Case B:
+System-To-System Interoperability 23]
+
+link:#use-case-c-aggregation-area-analysis-reporting[6.2.3 Use Case C:
+Aggregation Area Analysis & Reporting 24]
+
+link:#use-case-d-asset-level-analysis-reporting[6.2.4 Use Case D:
+Asset-level Analysis & Reporting 25]
+
+link:#non-functional-requirements[6.3 Non-Functional Requirements 25]
+
+link:#implementation-strategy[7.0 Implementation Strategy 26]
+
+link:#interoperability-strategy[7.1 Interoperability Strategy 26]
+
+link:#incremental-implementation-strategy[7.2 Incremental Implementation
+Strategy 27]
+
+link:#conclusions[8.0 Conclusions 28]
+
+link:#appendix-a-user-profiles[Appendix A – User Profiles A1]
+
+link:#appendix-b---vocabularies-and-ontologies[Appendix B - Vocabularies
+and Ontologies B1]
+
+link:#b1-unisdr---sendai-framework-for-disaster-risk-reduction[B1 UNISDR
+- Sendai Framework for Disaster Risk Reduction B1]
+
+link:#b2-inspire---infrastructure-for-spatial-information-in-the-european-community[B2
+INSPIRE - Infrastructure for Spatial Information in the European
+Community B5]
+
+link:#b3-gem-global-earthquake-model[B3 GEM – Global Earthquake Model
+B6]
+
+link:#b4-mover---multi-hazard-open-vulnerability-platform-for-evaluating-risk[B4
+MOVER - Multi-Hazard Open Vulnerability Platform for Evaluating Risk B8]
+
+link:#appendix-c-feature-comparison-matrix[Appendix C – Feature
+Comparison Matrix C1]
+
+link:#references[References i]
+
+link:#glossary[Glossary iii]
+
+== List of Figures
+
+link:#_Ref4082640[Figure 1 ‘The Global Risk Landscape 2019’ Impact-
+Likelihood of risk perception graph. 4]
+
+link:#_Ref4082544[Figure 2 The components for assessing risk. 8]
+
+link:#_Ref4158628[Figure 3 INSPIRE Natural Risk Zone UML diagram 10]
+
+link:#_Toc4416656[Figure 4 The INSPIRE Building UML diagram 11]
+
+link:#_Ref4162595[Figure 5 From OpenQuake to OpenDRR and end users 13]
+
+link:#_Ref4162630[Figure 6 Steps for an ontology creation 14]
+
+link:#_Ref4161660[Figure 7 OpenDRR risk metrics table summary 15]
+
+link:#_Ref4161782[Figure 8 OpenDRR taxonomy table summary 15]
+
+link:#_Ref4082180[Figure 9 OpenDRR in the context of the Federal
+Geospatial Platform (FGP) 17]
+
+link:#_Ref4397587[Figure 10 British Columbia Earthquake Risk Portal -
+Example of Earthquake Risk Reporting Tool 19]
+
+link:#_Ref4397657[Figure 11 Generic Framework of RiskScape for risk
+assessment tools in OpenDRR 20]
+
+link:#_Ref4079638[Figure 12 OpenDRR Integration and Delivery of
+Information within Federal Geospatial Platform. 21]
+
+link:#_Ref4398603[Figure 13 User-Centric Approach to Open, Decision
+Support Systems 22]
+
+link:#_Ref4404024[Figure 14. The importance of definition of standards.
+B1]
+
+link:#_Ref4399720[Figure 15 Metrics for Risk assessment. B4]
+
+link:#_Ref4400577[Figure 16 Natural Risk Zone Application schema B5]
+
+link:#_Ref4400874[Figure 17 Radial graph view of Natural Hazard Category
+Value code list. B6]
+
+link:#_Ref4400514[Figure 18 Factors of social vulnerability B7]
+
+link:#_Toc4416671[Figure 19 extract of MOVER vulnerability schema B10]
+
+== List of Tables
+
+link:#_Toc4416672[Table 1 OpenDRR System Requirements 22]
+
+link:#_Toc4416673[Table 2 OpenDRR Functional Requirements - Use Case A:
+Knowledge Capture By Domain Expert 23]
+
+link:#_Toc4416674[Table 3 OpenDRR Functional Requirements - Use Case B:
+System-to-System Interoperability 24]
+
+link:#_Toc4416675[Table 4 OpenDRR Functional Requirements - Use Case C:
+Aggregation Area Analysis & Reporting 24]
+
+link:#_Toc4416676[Table 5 OpenDRR Functional Requirements - Use Case D:
+Asset-Level Analysis & Reporting 25]
+
+link:#_Toc4416677[Table 6 OpenDRR Non-Functional Requirements 25]
+
+== Executive Summary
+
+Successful disaster risk reduction requires an integrated approach that
+facilitates the interpretation and delivery of disaster risk assessments
+across different verticals.
+
+The Open Disaster Risk Reduction (OpenDRR) is a broad initiative to
+provide a linked data solution that addresses the needs of various
+stakeholders in the disaster risk assessment process on a common
+platform. The goal is to design and implement an open source platform
+that can be adopted by the global community to support disaster risk
+management, starting with earthquake risk reduction. The platform will
+be key to informing policy choices, empowering the decision-making
+process and encouraging risk mitigation practices among individuals and
+business owners.
+
+The objective of this document is to provide high-level recommendations
+for an OpenDRR solution through a user-centric and standards-based
+approach as part of the national Disaster Risk Reduction (DRR) Pathways
+project to provide incentives for mitigation & adaptation investments in
+Canada.
+
+Five stakeholder user groups are the actors in four primary use cases
+providing guidance for the recommendations here. Through a review of
+profiles for each user group, functional requirements have been derived
+to describe the target state of the OpenDRR platform. A survey of
+existing disaster risk management platforms reveals the need for users
+to perform risk analysis using standardized terminology. The proposed
+OpenDRR target state incorporates use of ontologies and taxonomies in
+risk communication to efficiently interpret and communicate the outputs
+of risk analysis
+
+Finally, an incremental implementation strategy is proposed to guide the
+development of an OpenDRR solution. The successful implementation of
+OpenDRR will set a leading example for the Government of Canada in
+supporting disaster resilience planning in North America and Open
+Government initiatives.
+
+== 1.0 General Information
+
+=== 1.1 Project Team
+
+[cols=",,,",options="header",]
+|===
+|Name |Title |Organization |Contact
+|Gioachino Roberti |Section Head, Geohazards |Minerva Intelligence
+|groberti@minervaintelligence.com
+
+|Sharon Lam |GIS Analyst |Minerva Intelligence
+|slam@minervaintelligence.com
+
+|Stephen Richard |Chief Semantics Officer |Minerva Intelligence
+|srichard@minervaintelligence.com
+|===
+
+=== 1.2 Contributors
+
+[cols=",,,",options="header",]
+|===
+|Name |Title |Organization |Contact
+|Murray Journeay |Research Scientist |Geological Survey of Canada,
+Natural Resources Canada |murray.journeay@canada.ca
+
+|Sahar Safaie |Founder and Principal Consultant |Sage On Earth
+Consulting Ltd. |sahar.safaie@sageonearth.ca
+|===
+
+=== 1.3 Reviewers
+
+[cols=",,,",options="header",]
+|===
+|Name |Title |Organization |Contact
+|Clinton Smyth |CEO |Minerva Intelligence
+|cpsmyth@minervaintelligence.com
+
+|Jake McGregor |Section Head, Geospatial Technologies |Minerva
+Intelligence |jmgregor@mintervaintelligence.com
+|===
+
+== 2.0 Introduction
+
+=== 2.1 Background
+
+The Open Disaster Risk Reduction (OpenDRR) platform is an initiative to
+provide tools for disaster impact reduction through incentives for
+mitigation & adaptive investments as part of the Canadian national
+Disaster Risk Reduction (DRR) Pathways project.
+
+The DRR-Pathways project builds on demonstrated capabilities for
+integrated risk modelling, and the strengths of trusted regional
+partnerships. These partnerships have been established through a
+progression of studies, demonstration projects, and strategic planning
+initiatives carried out at municipal, regional and provincial scales in
+western and central Canada.
+
+Insights from these risk assessment projects have established a solid
+foundation of knowledge, methodology and expertise on which to develop a
+collaborative platform for evaluating the efficacy of disaster risk
+reduction investments at multiple scales in terms of both economic
+utility (willingness to pay), and policy trade-offs required to ensure
+longer-term disaster resilience (willingness to accept).
+
+The OpenDRR platform aims to provide tools to investigate, assess, and
+mitigate natural disasters for policy makers, risk analysts, private and
+public institutions, and citizens to facilitate decision-making prior to
+and during crisis.
+
+=== 2.2 Business Case
+
+The international community is becoming more aware of the risk related
+to natural disasters (Figure 1), and individuals, businesses and
+government leaders are increasingly receptive to the principles of
+systemic risk and disaster resilience planning.footnote:[Section 2.2
+Business Case is reproduced from Services Agreement between Sage On
+Earth Consulting Ltd. and Minerva Intelligence Inc. (Sage On Earth
+Consulting Ltd., 2019)] However, they are unlikely to take actions in
+advance of a disaster without a clearly defined value proposition.
+
+image:media/image3.png[image,width=501,height=513]
+
+[#_Ref4082640 .anchor]####Figure 1 ‘The Global Risk Landscape 2019’
+Impact- Likelihood of risk perception graph. People are becoming more
+aware of the environmental changes and the related risks. Red dashed
+circle highlights the environmental risks. (Modified form World Economic
+Forum 2019)
+
+The conventional approach is to motivate risk reduction decisions using
+quantitative risk assessment methods to analyze expected impacts and
+consequences, and to measure the relative costs and benefits of
+proactively investing in mitigation and/or adaptation measures. The
+expectation is that a positive rate of return on financial investments
+will provide the necessary incentive for individuals and organizations
+to take actions that will increase the disaster resilience of their
+homes, businesses and communities.
+
+The problem with this approach is that most quantitative assessment
+frameworks do not measure dynamic conditions of risk within the broader
+interconnected network of buildings, critical infrastructure,
+socioeconomic systems and environmental assets that define a community
+or region. They are also limited in their capacity to make evident
+either viable pathways for risk reduction (strategies), or the rationale
+for proactive investments in mitigation and adaptation measures across
+different stakeholder groups (incentives).
+
+Individuals, businesses and institutions responsible for making disaster
+risk reduction decisions (DRR) are not always directly engaged in the
+risk assessment process. As a result, the outputs of conventional
+science-based risk assessments (probable impacts and consequences) are
+often perceived as a liability and constraint to growth and development
+even if it can be demonstrated that proactive investments in mitigation
+and adaptation measures yield a positive rate of return and make good
+sense from a business perspective.
+
+For these reasons, there is an urgent need to develop a more integrated
+approach to the risk assessment process – one that situates the analysis
+of systemic risk in the broader context of strategic planning, and that
+provides the necessary base of evidence to inform the evaluation of
+policy choices and to empower the decision-making process.
+
+=== 2.3 Project Scope
+
+The objective of this document is to define scope for the OpenDRR
+platform and provide recommendations on system architecture based on the
+user cases and data/systems needs as part of the DRR-Pathways project in
+Canada.
+
+The Platform will be part of a federated spatial data infrastructure
+that will support an open access web-mapping application to explore
+hazard and risk scenarios generated with the OpenQuake platform or other
+Global Earthquake Model tools. The web-based platform will be an
+effective tool for investment decisions made by individuals, businesses,
+communities and institutions in support of Canada’s National Disaster
+Mitigation Strategy.
+
+=== 2.4 Document Outline
+
+This OpenDRR High Level Requirements document is structured as follows:
+
+* _Section 1: General Information_ – This section provides information
+and contact details for the project team and other contributors.
+* _Section 2: Introduction_ – This section provides the background
+information, business case and scope for this project.
+* _Section 3: Stakeholder Analysis_ - This section identifies five user
+groups and their role in disaster risk reduction to guide the
+development of the OpenDRR platform.
+* _Section 4: Ontological Approach to Disaster Risk Reduction_ – This
+section explores the topic of standards through taxonomies and
+ontologies. Existing risk vocabularies are discussed in the context of
+adaptation and specific implementations to serve the OpenDRR platform.
+* _Section 5: Influences for OpenDRR Platform Architecture_ – This
+section reviews existing disaster risk platforms to define the best
+possible structure of the OpenDRR platform.
+* _Section 6: OpenDRR Target State_ – This section describes the target
+state for the OpenDRR platform in terms of system and functionality
+requirements.
+* _Section 7: Implementation Strategy_ – This section proposes a
+strategy for interoperability and implementation for OpenDRR.
+* _Section 8: Conclusions_ – This section summarizes the need for an
+OpenDRR platform based on the topics reviewed in this document.
+* _Appendix A: User Profiles_ – User stories for three of the five
+stakeholders identified in Section 3
+* _Appendix B: Vocabularies and Ontologies_ – A collection of existing
+vocabularies relevant to the development of OpenDRR.
+* _Appendix C: Feature Comparison Matrix_ – A tabular comparison of
+frameworks and capabilities of spatial data infrastructure and web
+mapping platform implementations under review.
+
+== 3.0 Stakeholder Analysis
+
+In order to develop a successful program for disaster risk reduction,
+there needs to be seamless interaction between researchers, policy
+makers, planners, and the public based on a common understanding. The
+OpenDRR initiative aims to address this gap by prioritizing the end-user
+experience in guiding product development. Five scenarios for a
+federated OpenDRR platform were identified from which five user profiles
+were inferred.
+
+The scenarios are as follows:
+
+* Connect to the OpenQuake platform and Federal Geospatial Platform
+(FGP) to enable data sharing between Canadian node and other nodes in
+the global earthquake hazard network
+* Connect to provincial platforms (GeoBC, EMBC, Data Warehouse BC) to
+support provincial government and municipal emergency management
+operations
+* Support federal government evaluation of financial security in case of
+catastrophic event and support the financial sector with evaluation of
+potential risks as input for design of insurance policies
+* Connect to municipal platforms for land use planners to use hazard and
+risk information in policy design
+* Inform citizens and small businesses of risk to identify
+cost-effective risk mitigation activities
+
+The Users described in the following section are the Risk Analyst, the
+Emergency Manager, the Land-use planner, the Financial Risk manager and
+the Individual Home or Business Owner.
+
+=== 3.1 Risk Analyst
+
+Risk analysts are domain experts responsible for acquisition and
+analysis of hazard data to develop risk assessment, and update
+assessments as new data become available. The primary role of the
+OpenDRR system for this stakeholder is as a vehicle for disseminating
+results in a manner that is most useful to other stakeholders.
+
+=== 3.2 Emergency Manager
+
+Emergency managers are responsible of developing strategic and operation
+plans to protect people and assets in case of disasters. They utilize
+software tools to identify areas of concern for different hazard
+scenarios and elaborate emergency response plans.
+
+=== 3.3 Land-Use Planner
+
+Land-use planners develop policy strategies to manage the allocation and
+utilization of land, balancing competing demands for economic vitality,
+social justice, quality of life, and environmental integrity. They
+manage planning processes to identify and develop policy recommendations
+that are informed by relevant scientific and technical knowledge.
+
+Land-use planners have the responsibility of guiding sustainable land
+development. They utilize software tools to assess hazard areas and make
+determinations whether an area is safe for the use intended.
+
+=== 3.4 Financial Risk Manager
+
+Insurance risk managers develop models used to set insurance rates based
+on assessment of aggregate risk. They will rely on OpenDRR to provide
+site specific and regional hazard assessment, and risk models for
+comparison with their own models.
+
+=== 3.5 Individual Home or Business Owner
+
+Individual property owners are responsible for the maintenance and
+safety of their assets. They will query the OpenDRR system to obtain
+reliable assessments of risks to their property.
+
+== 4.0 Ontological Approach to Disaster Risk Reduction
+
+Disaster Risk Reduction is a complex multi-variate analysis that
+requires detailed knowledge of both the hazardous phenomena (earthquake,
+floods, wildfires, etc.) and the human components of risk (Figure 2). In
+order to investigate the multiple data sources required for risk
+calculation and to share the risk analysis, both input and output data
+must be expressed in consistent, standardized terminology and format to
+enable analysis and increase efficiency. This data standardization is
+challenging, but necessary and highly rewarding (Abbas & Ojo, 2013;
+Guidoin, Marczak, Pane, & McKinney, 2014; Harvey et al., 2014; Schade &
+Lutz, 2010). Some terms have multiple interpretations across language,
+culture, and applications leading to confusion when used (Kelman, 2018).
+However, once the issue of inconsistent terminology is overcome,
+detailed hazard and risk taxonomies can be utilized to allow integrated
+data investigation (Xu & Zlatanova, 2007). Ontologies are valuable tools
+when it comes to hazard and risk analysis where a common understanding
+needs to be established for interoperability. Ontologies provide a basis
+for integration of relevant information across a distributed network of
+systems and facilitates hidden and implicit knowledge discovery.
+
+image:media/image4.png[image,width=624,height=270]
+
+[#_Ref4082544 .anchor]####Figure 2 The component for assessing risk. A)
+Hazard- the natural system component of risk. B) Exposure – the human
+component of risk. (Modified from World Bank 2014)
+
+Standardization of data and vocabularies has fostered applications at
+national (for example: Vilches-Blázquez et al. 2010) and international
+levels (for example: Arctic SDI 2015). However, according to a review of
+several risk web platforms by the European Commission, the presentation
+of disaster risk information varies between platforms and hence is not
+easily interpreted for integrated analyses (Antofie, Doherty, &
+Marin-Ferrer, 2018). This section explores some current implementations
+of standardized vocabularies to be considered for OpenDRR.
+
+=== 4.1 Vocabularies
+
+Initiatives in data standardization and vocabularies definition include
+the Commission for the Management and Application of Geoscience
+Information (CGI) (Sen & Duffy, 2005) and Infrastructure for Spatial
+Information in the European Community (INSPIRE) (Mijić & Bartha, 2018).
+Regarding specific vocabularies for disaster risk reduction, the Sendai
+Framework (UNISDR, 2015) represents a global reference that other
+initiatives, including INSPIRE, have used as a foundation.
+
+==== 4.1.1 UNISDR - Sendai Framework for Disaster Risk Reduction
+
+The United Nations Office for Disaster Risk Reduction (UNISDR) developed
+the Sendai Framework (UNISDR, 2015) in order to provide states and
+stakeholders guidelines for disaster risk reduction. UNISDR recognized
+the need for common terminology to foster disaster risk reduction
+efforts among local, national, and international parties, and has
+developed the Sendai Framework hazard and risk vocabularies (UN, 2016)
+translated in Arabic, Chinese, English, French, Russian and Spanish.
+Sendai Framework vocabularies have been adopted and expanded by various
+disaster risk reduction initiatives including GEM and INSPIRE (see
+following sections). The Sendai Framework global targets are summarized
+in Appendix B1.
+
+==== 4.1.2 INSPIRE - Infrastructure for Spatial Information in the European Community
+
+The INSPIRE directive is a policy in the European Union aimed at
+standardizing the dissemination of spatial data. Spatial data in this
+context refers to any information that is tied to a location. This data
+spans a broad spectrum of disciplines and includes many different types,
+including monitoring station records, vector-based maps like geological
+maps, land cover maps and transportation maps or pixel-based raster maps
+for imagery or coverage data. All providers of spatial data in the
+public realm must adhere to INSPIRE from the national to the Municipal
+level. The vocabulary related to risk is described in the Natural Risk
+Zone (Figure 3) theme of Annex 3 and draws from the Sendai Framework
+guideline (EU expert working group on disaster damage and loss data,
+2015; INSPIRE Infrastructure for Spatial Information in Europe, 2013).
+
+image:media/image5.png[image,width=588,height=765]
+
+[#_Ref4158628 .anchor]####Figure 3 INSPIRE Natural Risk Zone UML diagram
+https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:12:1:8552
+
+The Natural Risk Zone data theme includes vocabularies to assess the
+hazard and the human component of risk. The terminology to describe
+detailed building characteristics resides in the INSPIRE building theme
+of Annex 3. This building taxonomy is built on top of the CityGML
+initiative (Figure 4) (INSPIRE Thematic Working Group Buildings, 2013).
+The CityGML taxonomy has as a primary objective the storing and
+exchanging of virtual 3D city modelsfootnote:[CityGML Initiative
+http://www.citygml.org/], focused on building geometry and location, not
+on the engineering aspects of building construction.
+
+image:media/image6.png[https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/EARoot/EA2/EA3/EA2/EA2/EA7912.png,width=555,height=519]
+
+[#_Toc4416656 .anchor]####Figure 4 The INSPIRE Building UML diagram
+(https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:2:2:7911)
+
+==== 4.1.3 GEM – Global Earthquake Model
+
+The Global Earthquake Model (GEM) is a private-public foundation with
+the goal of supporting disaster risk reduction and decision-making
+processes at the local, national and global scale. Recognizing the value
+of standardized data, GEM has developed various detailed taxonomies,
+including extensions of Sendai indicators for the specific scope of
+earthquake disaster risk calculation. Social and analytical indicators
+have been defined, including a detailed Multi-Hazard Exposure building
+taxonomy (Silva, Yepes-Estrada, Dabbeek, & Martins,
+2017).footnote:[OpenQuake Taxonomy https://taxonomy.openquake.org/] The
+GEM building classification has the primary objective to be used in
+earthquake science, and was developed from other taxonomies including
+the EERI World Housing Encyclopediafootnote:[EERI World Housing
+Encyclopedia http://db.world-housing.net/], PAGERfootnote:[Prompt
+Assessment of Global Earthquakes for Response (PAGER)
+https://earthquake.usgs.gov/data/pager/], and HAZUSfootnote:[Hazus
+https://www.fema.gov/hazus]. A graphical tool for constructing GEM
+building classification strings is also available.footnote:[TaxtWeb –
+GEM Building Taxonomy Editor https://platform.openquake.org/taxtweb/]
+Appendix B2 further explores GEM’s indicators.
+
+==== 4.1.4 MOVER - Multi-Hazard Open Vulnerability Platform for Evaluating Risk
+
+The UK Department for International Development and the Global Facility
+for Disaster Reduction and Recoveryfootnote:[Global Facility for
+Disaster Reduction and Recovery (GFDRR)
+https://www.gfdrr.org/en/who-we-are] promoted the open multi-hazard
+vulnerability database - MOVER (Multi-Hazard Open Vulnerability Platform
+for Evaluating Risk) project (Epicentre 2018)footnote:[Multi-Hazard Open
+Vulnerability Platform for Evaluating Risk (MOVER)
+https://www.preventionweb.net/publications/view/61104] for developing
+countries. Terms used by MOVER are based on definitions adopted by the
+Global Earthquake Model (GEM). The MOVER project has developed modules
+for describing Vulnerability, Fragility and Damage to Loss Functions,
+Physical Indicators, Social Indicators, and Physical, Social and Hybrid
+Indices. Each module includes vocabularies with dictionary tables that
+cross reference terms in other modules. Appendix B4 shows an extract of
+MOVER’s vulnerability schema.
+
+=== 4.2 Strategy for Ontology & Taxonomy Development
+
+The integration of geo-information to help decision-making prior to and
+during an emergency is fundamental for the OpenDRR platform. The enabler
+for this integration is an ontology for disaster risk reduction in
+Canada that harmonizes existing vocabularies for hazard and risk
+(SENDAI, INSPIRE, GEM) and includes new concepts where needed to support
+semantic interoperability and natural language reasoning (Figure 5).
+
+image:media/image7.png[image,width=604,height=526]
+
+____
+[#_Ref4162595 .anchor]####Figure 5 From OpenQuake to OpenDRR and end
+users (M. Journeay, personal communication)
+____
+
+Detailed vocabulary assessment is needed to evaluate aligning GEM
+terminology to INSPIRE standards, especially regarding the building
+taxonomy. The GEM building taxonomy has been tailored to the earthquake
+study needs while the INSPIRE-CityGML is not. For example, GEM
+vocabulary includes categories for building materials e.g. ‘metal
+(excluding steel)’ for roofs while CityGML has only a ‘metal’ generic
+categoryfootnote:[CityGML Codelist for Material of Roof
+http://hub.geosmartcity.eu/registry/codelist/MaterialOfRoofValue/]. In
+order to have consistency between systems, a clear distinction needs to
+be made between building performance indicators that are based on
+building use and building construction indicators, based on building
+structure. Construction details are important input for estimations of
+building damage in flood or earthquake scenarios, hence the GEM taxonomy
+seems more applicable to the OpenDRR platform scope.
+
+The OpenDRR ontology should ultimately be structured to satisfy the
+identified use cases (6.0 OpenDRR Target State). Development of an
+ontology for data integration will follow standard workflow processes
+(Figure 6).
+
+[#_Ref4162630 .anchor]####Figure 6 Steps for an ontology creation. (Noy
+& McGuinness, 2001)
+
+[arabic]
+. Determine scope. Review use cases and stakeholder analysis (Section
+3).
+. Enumerate terms. Identify outputs from OpenQuake and the link to the
+OpenDRR indicator (Figure 7):
+
+image:media/image8.png[image,width=415,height=457]
+
+[#_Ref4161660 .anchor]####Figure 7 OpenDRR risk metrics table summary
+(M. Journeay, personal communication)
+
+[arabic, start=3]
+. Identify existing vocabularies that are in use and could be harmonized
+(Figure 8). Terminology is needed to specify categorical data values,
+identify algorithms for calculating risk metrics, and to communicate
+risk assessment conclusions to both technical users and the general
+public.
+
+image:media/image9.png[image,width=527,height=203]
+
+[#_Ref4161782 .anchor]####Figure 8 OpenDRR taxonomy table summary (M.
+Journeay, personal communication)
+
+[arabic, start=4]
+. Define relations between concepts. Implement indicators vocabularies
+. Define constraints for logical validation
+. Define instances for actual occurrence descriptions.
+
+== 5.0 Influences for OpenDRR Platform Architecture
+
+The initial release of the OpenDRR Platform will provide departmental
+capabilities for Natural Resources Canada (NRCan) within the Federal
+Geospatial Platform (FGP) to support the OpenQuake initiative in Canada.
+The goal is to design and implement an open source platform that can be
+adopted by the global community to support disaster risk management,
+starting with earthquake risk reduction. Hence, the architecture of FGP
+and other relevant spatial data infrastructures needs to be considered
+to determine industry best practices. This section reviews a collection
+of exemplary risk management platforms that share the same vision as the
+OpenDRR platform. Additional comparisons are illustrated in a feature
+comparison matrix in Appendix C.
+
+=== 5.1 Spatial Data Infrastructure
+
+==== 5.1.1 Federal Geospatial Platform – Government of Canada
+
+The Federal Geospatial Platform is a collaborative online environment
+that enables the Government of Canada to efficiently manage and share
+authoritative geospatial data, services and applications. Since the
+OpenDRR platform will be a subsystem within a federated architecture
+(Figure 9), the OpenDRR platform should complement the objectives of the
+FGP. The objectives are as follows (Natural Resources Canada, 2015):
+
+* Better support for decision-making
+* Stimulate economic development and technological innovation
+* Increase efficiency and effectiveness in information management and
+acquisition
+* Support open government initiatives
+* Standardize information management
+
+image:media/image10.jpg[image,width=598,height=413]
+
+[#_Ref4082180 .anchor]####Figure 9 OpenDRR (red squares) in the context
+of the Federal Geospatial Platform (FGP) (Natural Resources Canada,
+2015)
+
+=== 5.2 Risk Management Platforms
+
+In order to successfully communicate recommendations for risk reduction
+to a wide audience, risk assessments and accompanying datasets need to
+be accessible and customizable. Based on the current inventory of
+available risk management platforms reviewed by the European Commission,
+a web-based platform is most desirable (Antofie et al., 2018). A
+web-based, service-oriented platform has the potential to provide tools
+for searching data repositories, data visualization, and analysis tools
+that can be tailored to the needs of various user groups.
+
+This section reviews the capabilities of the OpenQuake Platform and
+several other risk management web platforms as a basis to identify the
+shortcomings that the OpenDRR platform aims to resolve.
+
+==== 5.2.1 OpenQuake – Global Earthquake Model
+
+OpenQuake (OQ) is an open-source product by the Global Earthquake Model
+(GEM) Foundation that provides tools for building and running seismic
+hazard and risk assessment models and sharing the results (Global
+Earthquake Model, 2017). The OpenQuake Platform is an online environment
+in which users can explore, manipulate and visualize datasets and models
+produced by the OpenQuake Engine software. The OQ Platform allows users
+to upload datasets, which can then be used to create web map overlays
+and share them with the OQ community. Online tools are available to
+domain experts to contribute to the inventory of active faults, physical
+vulnerability functions, and building classifications. However the
+platform lacks a connected framework that allows all users to customize
+the interpretation of risk indicators for their domain, from emergency
+planners to individuals and business owners. The OpenDRR platform should
+aim to provide a web mapping environment that extends the current
+functionality of the OQ Platform beyond domain experts to communicate
+risk management to the general public.
+
+==== 5.2.2 European Risk Management Platforms
+
+Antofie et al. (2018) compiled an inventory of current risk management
+platforms in Europe and identified common characteristics. They found
+that many existing platforms provided hazard maps relating to exposure
+but few relate to socioeconomic and environmental aspects. There was
+also a greater focus on flood disaster risk management compared to other
+hazards and visualizations of risk for an area as a result of a hazard
+occurrence were simplified without providing statistical descriptions
+(Antofie et al., 2018).
+
+==== 5.2.3 Risk Data Hub – European Commission
+
+The Disaster Risk Management Knowledge Centre (DRMKC) Risk Data Hub
+(https://drmkc.jrc.ec.europa.eu/risk-data-hub) is a web GIS platform
+that hosts various geospatial data and tools to support disaster risk
+management across Europe (Antofie et al., 2018). The web portal provides
+a collaborative environment in which users can share and edit geospatial
+layers and maps as well as interpret data combined from national and
+local governments, scientists, and other organizations. The Risk Data
+Hub offers a centralized catalog of data for disaster risk management,
+metadata management tools, and presents statistical analysis of risk
+assessments alongside geospatial data. The architecture of the OpenDRR
+platform should consider the use of technologies implemented in the Risk
+Data Hub to achieve a similar, collaborative web platform where users
+are both data providers and end users.
+
+==== 5.2.4 British Columbia Earthquake Risk Portal
+
+The British Columbia Earthquake Risk Portal is an online mapping
+application for presenting earthquake risk information for British
+Columbia (NRCan, Emergency Services BC, GeoBC 2017). The portal is an
+example of a modern, user-centric application that provides a web map
+reporting tool for planners and emergency managers to export earthquake
+risk assessment results for an area of interest (Figure 10).
+
+The OpenDRR platform will extend the functionality illustrated in the BC
+Earthquake Risk Portal using open source software to provide additional
+analysis tools such as:
+
+* Updating risk indicators and recalculating risk assessments
+* Uploading building inventories and performing risk calculations
+
+image:media/image11.png[image,width=624,height=427]
+
+[#_Ref4397587 .anchor]####Figure 10 British Columbia Earthquake Risk
+Portal - Example of Earthquake Risk Reporting Tool
+
+==== 5.2.5 RiskScape – New Zealand
+
+RiskScape is a free desktop software for natural hazard impact
+assessments funded by GNS Science and the National Institute of Water &
+Atmospheric Research (NIWA) in New Zealand. The software supports hazard
+model refinements by the user, the uploading of custom asset data to
+perform risk analysis, and viewing of results at the asset or
+aggregation area levels. Although the software is designed for New
+Zealand conditions, its modular approach for performing risk assessments
+makes it adaptable to different natural hazard and asset scenarios
+anywhere in the world (Figure 11).
+
+The OpenDRR platform should draw on the modular design of RiskScape when
+designing analysis tools within the web mapping platform.
+
+image:media/image12.jpeg[Conceptual diagram of the RiskScape model
+framework,width=377,height=203]
+
+[#_Ref4397657 .anchor]####Figure 11 Generic Framework of RiskScape for
+risk assessment tools in OpenDRR
+(https://wiki.riskscape.org.nz/[https://wiki.riskscape.org.nz])
+
+== 6.0 OpenDRR Target State
+
+Effective disaster risk reduction is dependent on a dynamic network of
+knowledge through which a wide range of users, from researchers and
+planners to the general public, have access to reliable and actionable
+information. The goal of OpenDRR is to establish a federated platform to
+support disaster resilience planning in Canada.
+
+The target state for OpenDRR is to provide services for data access,
+search and discovery, data storage and management, and analysis tools
+supported by standardized vocabularies. From an architectural viewpoint,
+OpenDRR will need to include components that connect to the Canada’s
+Federal Geospatial Platform such as catalogues, data repositories, web
+services and OpenDRR-specific applications (Figure 12).
+
+OpenDRR will need to provide a variety of analysis and reporting tools
+for decision support. A web GIS platform is recommended because it has
+the greatest flexibility and accessibility to support a wide range of
+operations and a diverse user base (Figure 13). Although the platform
+will initially focus on earthquake risk management, drawing on the
+functionality of the OpenQuake Platform, the methodological processes
+should be designed in a modular fashion in order to support risk
+management for multiple hazards.
+
+image:media/image13.png[image,width=529,height=544]
+
+[#_Ref4079638 .anchor]####Figure 12 OpenDRR Integration and Delivery of
+Information within Federal Geospatial Platform. (Natural Resources
+Canada, 2015)
+
+[#_Ref4398603 .anchor]####Figure 13 User-Centric Approach to Open,
+Decision Support Systems
+
+The following sections describe the high-level requirements that will
+guide the development of OpenDRR towards the target state.
+
+=== 6.1 System Requirements
+
+[#_Toc4416672 .anchor]####Table 1 OpenDRR System Requirements
+
+[cols=",,,",options="header",]
+|===
+|ID  |Requirement  |Description  |Priority 
+|6.1.1 |*Development Framework*  |Hybrid solution of open-source
+software will be used to develop the application   |Mandatory 
+
+|6.1.2 |*Interactive mapping application*  |The application will provide
+web-based GIS capabilities. This will include map navigation, search,
+query, print, report, etc. Additional functionality will be developed to
+satisfy requirements identified in the use cases.   |Mandatory 
+
+|6.1.3 |*Federal Geospatial Platform*  |The application will be made
+available to the Federal Geospatial Platform for data sharing within FGP
+as well as Open Canada.  |Mandatory 
+
+|6.1.4 |Catalogue |A cataloguing and metadata management software is
+required. |Mandatory
+
+|6.1.5 |Web Server |A web server for hosting spatial and non-spatial
+data is required. |Mandatory
+|===
+
+=== 6.2 Functional Requirements
+
+The functional requirements of the OpenDRR platform are divided across
+four use cases and described as task-level goals. The four use cases are
+as follows:
+
+[upperalpha]
+. Knowledge capture by domain expert
+. System-To-System Interoperability
+. Aggregation Area Analysis and Reporting
+. Asset-level Analysis and Reporting
+
+==== 6.2.1 Use Case A: Knowledge Capture By Domain Expert
+
+Domain experts analyze, develop, maintain, and update risk assessment
+models using the OpenQuake platform. Output from these models is
+currently aggregated and interpreted for end users through a variety of
+manual processes, with some automation using Python scripts. The role of
+the OpenDRR system for the domain expert is to automate the processes
+linking model runs to updated risk and hazard reports in map or tabular
+formats. Model results and interpretations need to be packaged in a
+format such that other components in the OpenDRR system can generate
+products on demand that are useful to other stakeholders—for example
+reports focused on individual sites or aggregations based on location,
+building types, ownership, with different planning horizons.
+
+[#_Toc4416673 .anchor]####Table 2 OpenDRR Functional Requirements - Use
+Case A: Knowledge Capture By Domain Expert
+
+[cols=",,,",options="header",]
+|===
+|.ID |Actor |Task-level Goal |Priority
+|A.1 |Risk Analyst |Export results of earthquake and hazards modeling
+for input to OpenDRR system |Must Have
+
+|A.2 |OpenDRR Admin |Execute workflow to convert model results to data
+supporting end-user use cases |Must Have
+
+|A.3 |OpenDRR Admin |Backup data necessary for recovery from system
+failure or malicious disruption. |Should Have
+
+|A.4 |OpenDRR Admin |Store processed model results to support user query
+and reporting requirements. |Must Have
+|===
+
+==== 6.2.2 Use Case B: System-To-System Interoperability
+
+As a tool for generating user-focused maps and reports for risk and
+hazard assessment, OpenDRR system should support input via interfaces
+using standard web-based APIs and interchange formats, enabling data
+acquisition not only from models created on the OpenQuake platform, but
+from any modeling platform that implements these interfaces. In
+addition, the OpenDRR system should expose its query and reporting
+capabilities via web services to allow third parties to build
+applications that interact with the system. Service-based linkage using
+standard APIs, interchange formats, and vocabularies will allow near
+real time updating of output products when new assessment models are run
+or data are updated.
+
+The OpenDRR will follow international data standards to facilitate
+system-to-system interoperability. Data will also be organized in formal
+ontologies to support semantic data interoperability and natural
+language reasoning
+
+[#_Toc4416674 .anchor]####Table 3 OpenDRR Functional Requirements - Use
+Case B: System-to-System Interoperability
+
+[cols=",,,",options="header",]
+|===
+|ID |Actor |Task-level Goal |Priority
+|B.1 |All |Search and consume OpenDRR data as a service |Must Have
+
+|B.2 |OpenDRR Admin |Establish catalog and REST API connection protocols
+|Must Have
+
+|B.3 |Risk Analyst, Emergency Manager, Land-Use Planner, Financial Risk
+Manager |Publish models and reports to FGP Catalogue |Should Have
+
+|B.4 |Risk Analyst, Emergency Manager, Financial Risk Manager |Transfer
+data to FGP Data Repository |Could Have
+
+|B.5 |Risk Analyst |Update and maintain metadata catalogue in FGP Data
+Repository |Could Have
+|===
+
+==== 6.2.3 Use Case C: Aggregation Area Analysis & Reporting
+
+This scenario is focused on regional planning activities to assess
+resilience, for allocation of resources for preparedness, and to
+evaluate policy options for regulatory actions. Users will require
+reports aggregating estimated damage potential, economic impacts, and
+loss of life or injury over various jurisdictions. Users will rely on
+OpenDRR to generate authoritative reports, with presentations that are
+intelligible to non-expert planners and decision makers. The ability to
+trace interpretations back to supporting evidence is important.
+
+[#_Toc4416675 .anchor]####Table 4 OpenDRR Functional Requirements - Use
+Case C: Aggregation Area Analysis & Reporting
+
+[cols=",,,",options="header",]
+|===
+|ID |Actor |Task-level Goal |Priority
+|C.1 |Emergency Manager, Community Planner, Financial Risk Manager
+|Obtain risk analysis report aggregated for an area of interest |Must
+Have
+
+|C.2 |Emergency Manager, Community Planner, Financial Risk Manager |Get
+explanation for risk factors in a report |Should Have
+
+|C.3 |Emergency Manager |Obtain report on socio-economic impact for
+actual or potential hazard event |Could Have
+
+|C.4 |Community Planner |Obtain report on socio-economic risk for land
+development scenarios. |Could Have
+
+|C.5 |Financial Risk Manager |Obtain report on economic impact and
+probabilities for an area of interest. |Must Have
+
+|C.6 |Community Planner |Obtain report on probabilities and time
+horizons for possible level of ground-shaking in an area |Must Have
+
+|C.7 |Emergency Manager, Community Planner, Financial Risk Manager
+|Submit updates for building inventory or other infrastructure to update
+model scenarios |Could Have
+
+|C.8 |Emergency Manager, Community Planner, Financial Risk Manager |Get
+contact information for experts on hazards in an area of interest for
+technical assistance |Must Have
+|===
+
+==== 6.2.4 Use Case D: Asset-level Analysis & Reporting
+
+This scenario is designed to support an individual property owner to
+evaluate risk to their assets. Potential users will have widely varying
+levels of technical expertise. The major goal of reporting is to assist
+in evaluation of the costs and benefits of retro fit actions to increase
+resilience, and as an input for engineering design for new construction
+or remodeling.
+
+[#_Toc4416676 .anchor]####Table 5 OpenDRR Functional Requirements - Use
+Case D: Asset-Level Analysis & Reporting
+
+[cols=",,,",options="header",]
+|===
+|ID |Actor |Task-level Goal |Priority
+|D.1 |Individual/Business Owner |Obtain risk analysis report for a
+particular property |Could Have
+
+|D.2 |Individual/Business Owner |Get explanation for risk factors in a
+report |Should Have
+
+|D.3 |Emergency Planner |Obtain map showing buildings exceeding some
+risk threshold |Must Have
+|===
+
+=== 6.3 Non-Functional Requirements
+
+[#_Toc4416677 .anchor]####Table 6 OpenDRR Non-Functional Requirements
+
+[cols=",,,",options="header",]
+|===
+|ID  |Requirement  |Description  |Priority 
+|6.3.1 |*Accessibility*  |Accessible to people with disabilities
+according to the Web Content Accessibility Guidelines (WCAG 2.0). | Must
+Have
+
+|6.3.2 |*Traceability*  |Track and back up extensions to implemented
+standards and indicator algorithms. |Must Have
+
+|6.3.4 |*Provenance* |Trace result in a risk report to the supporting
+data. |Must Have
+
+|6.3.5 |*Internationalization*  |Accommodate multi-lingual support. 
+| Must Have
+
+|6.3.6 |*HTML Browser*  |Operate with widely used HTML browsers.  | Must
+Have
+
+|6.3.7 |*System Documentation*  |Provide documentation to support
+application use, maintenance, and updating.  | Must Have
+|===
+
+== 7.0 Implementation Strategy
+
+The OpenDRR platform is middleware between hazard or risk modeling
+environments like OpenQuake and end users who need to understand and
+evaluate risk to make economic and policy decisions. The end-user
+interface will operate as a web application using standard web browsers
+in desktop, tablet or hand-held device environments. Development and
+execution of hazard and risk assessment models is a separate concern,
+outside of the OpenDRR system. OpenDRR will receive output from these
+models as input, using one or more interfaces and interchange formats
+based on existing standards or on specifications developed by the
+implementation team if no standards meet requirements.
+
+OpenDRR will:
+
+[arabic]
+. Process model output into indicators and metrics to support end user
+query, reporting, and presentation requirements.
+. Maintain data necessary to support presentation functions
+. Provide a web-browser-based user interface to run queries, view
+results, and download reports.
+
+=== 7.1 Interoperability Strategy
+
+The interoperability solutions for OpenDRR will be developed by
+determining what information needs to flow into and out of the system.
+The major information flows in the system are:
+
+[arabic]
+. From modeling environment (e.g. OpenQuake platform) to OpenDRR. This
+is information flowing from the ‘world’ into the OpenDRR environment.
+. From OpenDRR to Users, e.g. from OpenDRR business layer to user
+presentation layer running on web browsers.
+. From OpenDRR to third party applications.
+
+Enabling these information flows will require evaluating the information
+input required for the OpenDRR platform to develop metrics and
+indicators necessary for meeting user requirements, and then studying
+the OpenQuake platform to determine how that information is generated
+and made available. The OpenQuake Engine Server includes an HTTP API for
+running calculations, checking calculation status, and browsing and
+downloading results.footnote:[OpenQuake Engine GitHub Project
+https://github.com/gem/oq-engine/blob/master/doc/web-api.md] Detailed
+evaluation will be needed to determine what information the OpenQuake
+API can provide directly to the presentation layer from an OpenQuake
+server, and what information will need to be pre-processed by OpenDRR.
+The OpenQuake API uses JSON-format files for messaging, and the existing
+file formats and vocabularies will probably define a de-facto standard
+for information interchange between OpenDRR and the modeling
+environments.
+
+Communication requirements between OpenDRR and the web-mapping or
+presentation layer operating in the web client will be determined by the
+partitioning of functionality between the server and clients. The system
+will use existing interchange formats when applicable specifications
+exist. Some custom JSON or XML formats might need to be developed; these
+will be documented using e.g. JSON or XML schema to facilitate
+connection with other systems.
+
+=== 7.2 Incremental Implementation Strategy
+
+[arabic]
+. Interview end users to develop detailed requirements for report
+content and presentation, as well as required dynamic query
+capabilities. We anticipate that the functionality provided by the
+British Columbia Earthquake Risk Portal and the European Risk Data Hub
+will provide guidance.
+. Clearly define function partitioning between OpenQuake platform and
+OpenDRR.
+. Identify any other input components (e.g. BC Data Warehouse, CA FDR)
+that need to be linked to OpenDRR for it to execute its functions.
+. Evaluate options for APIs and interchange formats to feed data into
+OpenDRR from OpenQuake or other sources. Identify existing formats that
+can be used.
+. Study existing Python code used to generate interpretations or reports
+from OpenQuake platform output; use as a guide to design components to
+automate the process.
+. Design functional architecture separating business logic and
+presentation in OpenDRR. For a web-based architecture, major
+consideration here will be partitioning of computation between server
+(backend) and web client.
+. Determine interface requirements for linking business logic (server)
+and presentation (web client) in OpenDRR. The services linking these
+should be designed with intention that they could be public to allow
+third parties to build applications using OpenDRR backend as a source.
+. Write specs for interfaces linking components; API operations,
+interchange formats
+. Write software specs. Assume actual development will use an agile
+process, so the plan will mostly prioritize functionality and define
+function of components.
+
+== 8.0 Conclusions
+
+The current landscape for disaster risk management tools described in
+this review is barely comprehensive, yet it is clear there is a lack in
+solutions that support seamless interaction between researchers, policy
+makers, planners, and the public. This interaction is critical in
+achieving a common understanding of risk such that all parties involved
+have incentives to support risk mitigation efforts and adaptation
+investments in Canada.
+
+Successful disaster risk reduction can only be achieved with true
+interoperability between systems and all stakeholder groups and an
+OpenDRR platform addresses this gap with a standards-based approach. The
+proposed OpenDRR platform with common knowledge and terminology
+surrounding disaster risk reduction prioritizes the end-user experience.
+In so doing, it provides a necessary foundation for stimulating
+proactive investments in earthquake mitigation measures because it makes
+clear the positive role of return on such investments.
+
+== Appendix A – User Profiles
+
+The following user profiles were compiled by NRCan.
+
+image:media/image14.png[image,width=140,height=196]End User: Emergency
+Manager 
+
+Role/Responsibility: Emergency managers have a primary role in
+developing strategic and operational plans that will protect people and
+critical assets in the event of an unexpected disaster. They are
+responsible for all aspects of pre-event planning to identify and
+prioritize hazard threats of concern, to prepare for hazard events that
+are considered most likely in the context of a particular place or
+planning horizon, and to provide coordination for the response to and
+recovery from the impacts and consequences of these events. Their
+primary focus is to determine who and what are exposed to hazard threats
+in the immediate and short term (0–5 years); what are the likely impacts
+and consequences of a disaster event on people and critical assets; what
+are the capabilities to withstand, respond to and recover from disaster
+events; and how to increase awareness and understanding of the risk
+environment to encourage behaviours that minimize vulnerability and risk
+over time.
+
+As with land use planners, emergency managers are focused primarily on
+judgments about scientific uncertainty, perceptions of risk, and
+political accountability. In support of both strategic and operational
+components of their mandate, they need access to relevant, timely and
+authoritative information about credible hazard risks for a given area
+(maps, tables, and reports), and require the ability to forecast likely
+impacts and consequences to assess mitigation requirements and to ensure
+critical thresholds of preparedness on an ongoing basis. They also need
+up-to-date and accurate inventories of vulnerable populations and
+critical assets of concern to enhance situational awareness during
+response and recovery operations. 
+
+ 
+
+Motivating Questions: 
+
+ 
+
+Pre-Event Planning 
+
+* {blank}
++
+____
+What is the likelihood of experiencing a damaging earthquake in the next
+50 years? 
+____
+* {blank}
++
+____
+Who and What are vulnerable to earthquake hazards? 
+____
+* {blank}
++
+____
+What are the likely impacts and consequences of a
+catastrophic earthquake? 
+____
+
+* {blank}
++
+____
+What is the risk reduction potential through proactive investments in
+structural mitigation? 
+____
+
+Immediate Response 
+
+* {blank}
++
+____
+What is the scope of physical damage and injuries caused by the
+earthquake event? 
+____
+* {blank}
++
+____
+How can this information be used to prioritize a rapid
+damage assessment? 
+____
+* {blank}
++
+____
+What additional capacities are required to support strategic
+response operations? 
+____
+
+* {blank}
++
+____
+What are the requirements for emergency shelter and relocation support? 
+____
+
+Sustained Response 
+
+* {blank}
++
+____
+Which damage hotspots need to be secured and prioritized for
+recovery operations? 
+____
+* {blank}
++
+____
+How long will it take to restore baseline levels of functionality to
+the community? 
+____
+* {blank}
++
+____
+What is the extent of economic loss to homes, businesses &
+government facilities? 
+____
+
+* {blank}
++
+____
+What is the most effective way to expedite the recovery process? 
+____
+
+ 
+
+ 
+
+Value Proposition: a collection of policy-based target indicators that
+can be used to assess baseline conditions of risk, and the potential for
+risk reduction through proactive investments in mitigation and/or
+adaptation measures
+
+[cols=",",options="header",]
+|===
+|image:media/image15.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\EE72FAFB.tmp,width=66,height=60]
+a|
+Building Performance: Indicators that measure expected damage state and
+recovery time for buildings and critical facilities resulting from
+physical impacts of a disaster event. Supporting evidence
+includes neighborhood and site-level building inventories under
+development for settled areas in the region, and analytical fragility
+functions (GEM, UBC) that reflect the best available information about
+construction type and performance characteristics for standard
+North American building typologies 
+
+____
+Damage Potential 
+
+Operational 
+
+Repairable 
+
+Failure 
+
+Collapse 
+
+Disaster Debris 
+____
+
+|image:media/image16.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\301B49C1.tmp,width=66,height=60]
+a|
+B-1: Affected People: Indicators that measure the number and demographic
+characteristics of people likely to be injured and/or displaced as a
+result of physical impacts to buildings that are damaged in a disaster
+event. Included in the scope of assessment are characteristics of a
+place and its people that determine intrinsic capabilities to withstand
+and respond to chronic stresses and the acute shocks of a sudden
+disaster event. Supporting evidence includes 2106 Census data on
+population and demographic variables; empirical knowledge about the
+distribution of people at different times of the day based on occupancy
+and functional characteristics of individual building typologies. 
+
+____
+B-2: People Injured 
+
+Minor Injuries 
+
+Critical Injuries 
+
+B-3: People Displaced 
+
+Immediate (<30 days) 
+
+Shelter Requirements 
+
+Short-Term (>30 days) 
+
+Sustained (> 90 days) 
+
+B-4: People Relocated 
+
+Temporary (>180 days) 
+
+Permanent (>360 days) 
+
+B-5: Livelihoods Disrupted 
+
+Business Interruption (>30 days) 
+
+Business Interruption (> 90 days)
+____
+
+|image:media/image17.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\9D67277.tmp,width=66,height=60]
+a|
+D-1: Critical Infrastructure: Indicators that measure direct and
+indirect impacts to critical infrastructure systems with a potential to
+cause disruption of basic services. This includes direct physical
+impacts and anticipate damage to individual facilities and assets; and
+the cascading effects of failures through the network of interconnected
+CI systems 
+
+____
+D2: Health Sector 
+
+D3: Government Sector 
+
+D4: Transportation Sector 
+
+D5: Lifeline Services 
+
+Safety 
+
+Finance 
+
+Manufacturing 
+____
+
+|===
+
+ Preferred Channel(s) of Communication: 
+
+[arabic]
+. {blank}
++
+____
+Online maps and summary statistics (infoViz charts) for selected regions
+of interest. 
+____
+
+[arabic, start=2]
+. {blank}
++
+____
+Downloadable ‘Risk Profile ‘report for selected region(s) and indicators
+of interest. 
+____
+
+[arabic, start=3]
+. {blank}
++
+____
+Download risk assessment data for selected region(s) and indicators of
+interest. 
+____
+
+[arabic, start=4]
+. {blank}
++
+____
+Access to domain experts to assist with the interpretation of risk
+assessment outputs 
+____
+
+ 
+
+User Story Map: 
+
+image:media/image18.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\4AD5BA9D.tmp,width=600,height=508]
+
+ 
+
+End User: Community Planner 
+
+Role/Responsibility: Land use planners have a primary role in
+researching and developing public policy strategies to manage the
+allocation and use of land in ways that reconcile individual and
+collective rights and that balance competing demands for economic
+vitality, social justice, quality of life, and environmental integrity.
+They are responsible for designing and facilitating the planning process
+in order to identify and develop policy recommendations that reflect the
+intent, values, and preferences of the community, and that are informed
+by relevant scientific and technical knowledge about human-natural
+systems and their interactions over time.
+
+In the context of existing legislative frameworks such as land use
+bylaws and zoning ordinances (1–5 years), planners are often called on
+to assess whether proposed developments or land use activities are “safe
+for the use intended” and consistent with policies and regulations at
+multiple jurisdictional levels. Though responsible for informing
+day-to-day operational land use decisions, planners must also maintain a
+clear focus on the longer-term vision or intent of the community (5–30
+years)— a vision that is developed through consultation, analysis, and
+the evaluation of policy alternatives. This involves a strategic
+assessment of current and anticipated future trends to direct the
+allocation of land in ways that will accommodate the varied needs and
+wants of a community while balancing thresholds for risk tolerance
+within the limits of available resources.
+
+Primary needs and operational requirements for a land use planner in the
+context of disaster resilience are focused on issues of representation,
+judgments about scientific uncertainty, and perceptions about risk and
+political accountability. Planners need access to technical risk
+assessment information and guidelines that help facilitate risk-based
+planning at local or regional scales. They also need access to relevant
+domain experts to assist in the risk evaluation process and the
+interpretation of results. Finally, they need mechanisms to prioritize
+risk management options based on thresholds of risk tolerance that
+reflect community values and preferences and available knowledge about
+the risk environmentimage:media/image19.png[image,width=140,height=196].
+
+Motivating Questions: 
+
+* What is
+the [.underline]#likelihood# of [.underline]#experiencing# a [.underline]#damaging
+earthquake# in the planning area? 
+* What [.underline]#level# of [.underline]#ground shaking# can
+we [.underline]#anticipate#? 
+* Are there other earthquake [.underline]#hazards# of concern in this
+region
+([.underline]#liquefaction#, [.underline]#landslides#, [.underline]#fire-following#,
+etc.)? 
+* Where are the likely [.underline]#hotspots# of [.underline]#building
+damage# in the community and [.underline]##expected recovery time##s? 
+* What level of [.underline]#damage# can we expect
+for [.underline]#critical assets of concern# in the region? 
+* Who is most likely to be negatively affected by the impacts of a
+major earthquake? 
+* Who is most likely will be displaced from their homes and businesses
+following a major earthquake event? 
+* How long will it take to restore essential levels of functionality in
+areas hardest hit by a major earthquake? 
+* What are the likely financial consequences of a major earthquake? 
+* What are the most strategic opportunities for reducing underlying
+vulnerabilities through investments in seismic retrofit measures? 
+* What are the benefits and costs of proposed seismic
+mitigation measures? 
+* What incentives are needed to encourage investments in risk
+reduction measures? 
+* What are the potential co-benefits of investing in seismic
+mitigation? 
+* Are there other communities that share a similar risk profile who may
+have already developed relevant DRR policies? 
+
+Value Proposition: a collection of policy-based target indicators that
+can be used to assess baseline conditions of risk, and the potential for
+risk reduction through proactive investments in mitigation and/or
+adaptation measures 
+
+[cols=",",options="header",]
+|===
+|image:media/image15.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\EE72FAFB.tmp,width=66,height=60]
+a|
+Building Performance: Indicators that measure expected damage state and
+recovery time for buildings and critical facilities resulting from
+physical impacts of a disaster event. Supporting evidence
+includes neighborhood and site-level building inventories under
+development for settled areas in the region, and analytical fragility
+functions (GEM, UBC) that reflect the best available information about
+construction type and performance characteristics for standard
+North American building typologies 
+
+____
+Damage Potential 
+
+Operational 
+
+Repairable 
+
+Failure 
+
+Collapse 
+
+Disaster Debris 
+____
+
+|image:media/image16.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\301B49C1.tmp,width=66,height=60]
+a|
+B-1: Affected People: Indicators that measure the number and demographic
+characteristics of people likely to be injured and/or displaced as a
+result of physical impacts to buildings that are damaged in a disaster
+event. Included in the scope of assessment are characteristics of a
+place and its people that determine intrinsic capabilities to withstand
+and respond to chronic stresses and the acute shocks of a sudden
+disaster event. Supporting evidence includes 2106 Census data on
+population and demographic variables; empirical knowledge about the
+distribution of people at different times of the day based on occupancy
+and functional characteristics of individual building typologies. 
+
+____
+B-2: People Injured 
+
+Minor Injuries 
+
+Critical Injuries 
+
+B-3: People Displaced 
+
+Immediate (<30 days) 
+
+Shelter Requirements 
+
+Short-Term (>30 days) 
+
+Sustained (> 90 days) 
+
+B-4: People Relocated 
+
+Temporary (>180 days) 
+
+Permanent (>360 days) 
+
+B-5: Livelihoods Disrupted 
+
+Business Interruption (>30 days) 
+
+Business Interruption (> 90 days)
+____
+
+|image:media/image20.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\AE06B795.tmp,width=66,height=60]
+a|
+C-1: Economic Security: Indicators that measure direct and indirect
+economic losses, and the potential for losses avoided through
+investments in mitigation/adaptation, and expected return on investment
+(RoI) for a given planning horizon.  Valuation of capital assets is
+based on industry standard replacement costs for structural and
+non-structural building components and contents. 
+
+____
+C-2: Agricultural Loss & Loss Reduction Potential 
+
+C-3: Productive Asset Loss (Business Sector) & Loss Reduction Potential 
+
+C-4: Residential Asset Loss & Loss Reduction Potential 
+
+C-5: CI Asset Loss & Loss Reduction Potential 
+
+C-6: Cultural Heritage Asset Loss & Loss Reduction Potential 
+____
+
+|image:media/image17.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\D81A236B.tmp,width=66,height=60]
+a|
+D-1: Critical Infrastructure: Indicators that measure direct and
+indirect impacts to critical infrastructure systems with a potential to
+cause disruption of basic services. This includes direct physical
+impacts and anticipate damage to individual facilities and assets; and
+the cascading effects of failures through the network of interconnected
+CI systems 
+
+____
+D2: Health Sector 
+
+D3: Government Sector 
+
+D4: Transportation Sector 
+
+D5: Lifeline Services 
+
+Safety 
+
+Finance 
+
+Manufacturing 
+____
+
+|===
+
+ 
+
+Preferred Channel(s) of Communication: 
+
+[arabic]
+. Online maps and summary statistics (infoViz charts) for selected
+regions of interest. 
+
+[arabic, start=2]
+. Downloadable ‘Risk Profile ‘report for selected region(s) and
+indicators of interest. 
+
+[arabic, start=3]
+. Download risk assessment data for selected region(s) and indicators of
+interest. 
+
+[arabic, start=4]
+. Access to domain experts to assist with the interpretation of risk
+assessment outputs 
+
+ 
+
+User Story Map: 
+
+image:media/image21.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\6A7D3BB1.tmp,width=497,height=323]
+
+End User: Risk Analyst 
+
+Role/Responsibility: Domain experts are called upon to provide insights
+on the causes and driving forces of natural hazard processes, and to
+diagnose the likely impacts and consequences of these events on society
+and the environment. They can include individuals from public, private,
+and academic sectors with a theoretical background and expertise in the
+physical sciences, engineering, the social sciences, or humanities.
+Unlike planners and members of the general public, domain experts are
+focused primarily on the generation of knowledge for the purpose of
+refining or expanding an understanding of human-natural systems and how
+they work. They have a primary role in identifying existing and emerging
+societal risk, and in assessing the implications of these risks to
+inform planning and policy development (analysis and evaluation).   
+
+image:media/image22.png[image,width=152,height=196]In the context of the
+physical sciences and engineering, time horizons of interest will vary
+depending on the nature of the hazard threat. They can range from near
+real-time monitoring of natural or anthropogenic processes (severe
+weather, floods, hurricanes, etc.) that have a potential to trigger
+hazard events over relatively short time intervals (0–50 years) to
+theoretical or computational modelling of larger-scale processes
+(earthquakes, landslides, global climate change, etc.) that have a
+potential to trigger hazard events over geologic time frames of decades
+and centuries (100–10,000 years).  In the context of the social sciences
+and humanities, the focus is on historical trends and existing
+conditions that may shed light on intrinsic patterns of vulnerability,
+and the adaptive capabilities of individuals to withstand, respond to
+and recover from disaster events.  
+
+As the creatores of new information and knowledge about the risk
+environment, domain experts are primarily concerned about issues of
+complexity and uncertainty. They require an internally consistent set of
+protocols to measure and describe system conditions and driving forces
+of risk in the environment, and a corresponding set of methods and tools
+that can be used to analyze hazard potential, the impacts and
+consequences of credible hazard events, and to evaluate both single and
+multi-hazard event risk scenarios over time horizons of interest to the
+planning process. In addition, they need methods and tools to assist in
+communicating the results of their assessments in ways that make evident
+scientific uncertainties and underlying assumptions about
+system behavior. 
+
+User Story Map:
+
+image:media/image23.png[C:\Users\slam\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\880F538D.tmp,width=624,height=564]
+
+== Appendix B - Vocabularies and Ontologies
+
+Definition of standards is a very important step in many applications
+(Figure 14), including the OpenDRR platform.
+
+image:media/image24.png[Image result for standard
+cartoon,width=500,height=283]
+
+[#_Ref4404024 .anchor]####Figure 14. The importance of definition of
+standards. (https://xkcd.com/927/)
+
+=== B1 UNISDR - Sendai Framework for Disaster Risk Reduction
+
+OpenDRR indicators connect to the Sendai Global targets (Figure 15)
+
+Global target A: Substantially reduce global disaster mortality by 2030,
+aiming to lower average per 100,000 global mortality between 2020-2030
+compared with 2005-2015.
+
+* A-1 (compound) Number of deaths and missing persons attributed to
+disasters, per 100,000 population.
+* A-2 Number of deaths attributed to disasters, per 100,000 population.
+* A-3 Number of missing persons attributed to disasters, per 100,000
+population.
+
+Global target B: Substantially reduce the number of affected people
+globally by 2030, aiming to lower the average global figure per 100,000
+between 2020-2030 compared with 2005-2015
+
+* B-1 (compound) Number of directly affected people attributed to
+disasters, per 100,000 population.
+* B-2 Number of injured or ill people attributed to disasters, per
+100,000 population.
+* B-3 Number of people whose damaged dwellings were attributed to
+disasters.
+* B-4 Number of people whose destroyed dwellings were attributed to
+disasters
+* B-5 Number of people whose livelihoods were disrupted or destroyed,
+attributed to disasters.
+
+Global target C: Reduce direct disaster economic loss in relation to
+global gross domestic product (GDP) by 2030.
+
+* C-1 (compound) Direct economic loss attributed to disasters in
+relation to global gross domestic product.
+* C-2 Direct agricultural loss attributed to disasters.
+* C-3 Direct economic loss to all other damaged or destroyed productive
+assets attributed to disasters.
+* C-4 Direct economic loss in the housing sector attributed to
+disasters.
+* C-5 Direct economic loss resulting from damaged or destroyed critical
+infrastructure attributed to disasters
+* C-6 Direct economic loss to cultural heritage damaged or destroyed
+attributed to disasters
+
+Global target D: Substantially reduce disaster damage to critical
+infrastructure and disruption of basic services, among them health and
+educational facilities, including through developing their resilience by
+2030.
+
+* D-1 Damage to critical infrastructure attributed to disasters.
+* D-2 Number of destroyed or damaged health facilities attributed to
+disasters.
+* D-3 Number of destroyed or damaged educational facilities attributed
+to disasters
+
+Global target E: Substantially increase the number of countries with
+national and local disaster risk reduction strategies by 2020
+
+* E-1 Number of countries that adopt and implement national disaster
+risk reduction strategies in line with the Sendai Framework for Disaster
+Risk Reduction 2015-2030.
+* E-2 Percentage of local governments that adopt and implement local
+disaster risk reduction strategies in line with national strategies.
+
+Global target F: Substantially enhance international cooperation to
+developing countries through adequate and sustainable support to
+complement their national actions for implementation of this framework
+by 2030
+
+* F-1 Total official international support, (official development
+assistance (ODA) plus other official flows), for national disaster risk
+reduction actions
+* F-2 Total official international support (ODA plus other official
+flows) for national disaster risk reduction actions provided by
+multilateral agencies.
+* F-3 Total official international support (ODA plus other official
+flows) for national disaster risk reduction actions provided bilaterally
+* F-4 Total official international support (ODA plus other official
+flows) for the transfer and exchange of disaster risk reduction- related
+technology
+* F-5 Number of international, regional and bilateral programmes and
+initiatives for the transfer and exchange of science, technology and
+innovation in disaster risk reduction for developing countries
+* F-6 Total official international support (ODA plus other official
+flows) for disaster risk reduction capacity-building
+* F-7 Number of international, regional and bilateral programmes and
+initiatives for disaster risk reduction-related capacity- building in
+developing countries.
+* F-8 Number of developing countries supported by international,
+regional and bilateral initiatives to strengthen their disaster risk
+reduction-related statistical capacity
+
+Global target G: Substantially increase the availability of and access
+to multi-hazard early warning systems and disaster risk information and
+assessments to the people by 2030.
+
+* G-1 (compound G2-G5) Number of countries that have multi-hazard early
+warning systems.
+* G-2 Number of countries that have multi-hazard monitoring and
+forecasting systems.
+* G-3 Number of people per 100,000 that are covered by early warning
+information through local governments or through national dissemination
+mechanisms.
+* G-4 Percentage of local governments having a plan to act on early
+warnings.
+* G-5 Number of countries that have accessible, understandable, usable
+and relevant disaster risk information and assessment available to the
+people at the national and local levels.
+* G-6 Percentage of population exposed to or at risk from disasters
+protected through pre-emptive evacuation following early warning.
+
+image:media/image25.png[image,width=559,height=759]
+
+[#_Ref4399720 .anchor]####Figure 15 Metrics for Risk assessment. Boxes
+with letter-number prefixes are from the Sendai Framework. Other metrics
+are specific to the OpenDRR
+
+=== B2 INSPIRE - Infrastructure for Spatial Information in the European Community
+
+INSPIRE Natural Risk Zone Application schema encompasses both hazard and
+risk terminology (Figure 16). The Hazard terminology appears to be
+insufficient to describe hazards in detail, for example there is the
+term ‘Landslide’ but it is not possible to describe the type of
+landslide (Figure 17). This is one of the many examples where INSPIRE
+need further implementation.
+
+image:media/image26.png[image,width=518,height=610]
+
+[#_Ref4400577 .anchor]####Figure 16 Natural Risk Zone Application schema
+http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectPreselection.action
+
+image:media/image27.png[image,width=624,height=260]
+
+[#_Ref4400874 .anchor]####Figure 17 Radial graph view of Natural Hazard
+Category Value code list
+http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=10621.
+
+=== B3 GEM – Global Earthquake Model
+
+Earthquake Intensity measure Type
+
+* PGA – Peak Ground Acceleration, measured in fractions of g
+* PGV - Peak Ground Velocity, measured in cm/s
+* PGD – Peak Ground Displacement, measured in cm
+* Sa(T) - Spectral Acceleration for a given period T – indicated as
+Sa(T) - measured in fractions of g
+* GMMT – Ground Motion Measurement Type
+* IML – Intensity Measure Level
+
+Social vulnerability factors (Figure 18)
+
+* Number of loss-based damage states: (no damage, slight, moderate,
+extensive, complete)
+* Number of functional-based limit states: (no damage, trigger
+inspection, loss function, not occupiable, irreparable, collapse)
+* Transfer Probabilities: The element (i, j) of the matrix is the
+probability that the recovery-based limit state j occurs, given the
+loss-based damage state i
+* Assessment times: Time to conduct engineering assessment
+* Inspection times: Time to complete inspections
+* Mobilization times: Time to mobilize for construction
+* Recovery times: Period between the occurrence of the earthquake and
+the restoration of full functionality
+* Repair times: Time to replace elements in buildings or to reconstruct
+buildings
+* Repair times dispersion: Level of uncertainty associated with the
+repair times
+* Lead times dispersion: Level of uncertainty associated with the lead
+times
+
+image:media/image28.png[image,width=624,height=480]
+
+[#_Ref4400514 .anchor]####Figure 18 Factors of social vulnerability
+after (Cutter, Boruff, & Shirley, 2003)
+
+Building Taxonomy
+
+13 attributes of GEM Building Taxonomy:
+
+[arabic]
+. Direction – the orientation of building(s) with different lateral
+load-resisting systems in two principal horizontal directions of the
+building plan which are perpendicular to one another
+. Material of the lateral load-resisting system - e.g. "masonry" or
+"wood"
+. Lateral load-resisting system - the structural system that provides
+resistance against horizontal earthquake forces through vertical and
+horizontal components, e.g. "wall", "moment frame", etc.
+. Height - building height above ground in terms of the number of
+storeys (e.g. a building is 3-storey high); this attribute also includes
+information on the number of basements (if present) and the ground slope
+. Date of construction or retrofit - the year in which the building
+construction or retrofit was completed
+. Occupancy - the type of activity (function) that the building is used
+for
+. Building position within a block - the position of a building within a
+block of buildings (e.g. a "detached building" is not attached to any
+other building)
+. Shape of the building plan - e.g. L-shape, rectangular shape, etc.
+. Structural irregularity - features of a building's structural
+arrangement that are irregular; such as one story is significantly
+higher than other stories, or the building has an irregular shape. Also
+the change of the structural system or materials that produce known
+vulnerability during an earthquake fall into this category. Re-entrant
+corner and soft story are examples.
+. Exterior walls - material of exterior walls (building enclosure), e.g.
+"masonry", "glass", etc.
+. Roof - this attribute describes the roof shape, material of the roof
+covering, structural system supporting the roof covering, and the
+roof-wall connection. For example, the roof shape may be "pitched with
+gable ends", roof covering could be "tile", and the roof system may be
+"wooden roof structure with light infill or covering".
+. Floor - describes the floor material, floor system type, and
+floor-wall connection. For example, the floor material may be
+"concrete", and the floor system may be "cast in-place beamless
+reinforced concrete slab".
+. Foundation - that part of the construction where the base of the
+building meets the ground. The foundation transmits loads from the
+building to the underlying soil. For example, a shallow foundation
+supports walls and columns in a building for hard soil conditions, and a
+deep foundation needs to be provided for buildings located in soft soil
+areas.
+
+=== B4 MOVER - Multi-Hazard Open Vulnerability Platform for Evaluating Risk
+
+MOVER modules from Epicentre, (2018)
+
+Vulnerability characteristics (V_Ch) are descriptors of the main factors
+contributing to the (social or physical) vulnerability of the asset to a
+hazard. An example of a V_Ch is level of literacy, which contributes to
+the social vulnerability of populations.
+
+Vulnerability categories (V_Cat) are a grouping of vulnerability
+characteristics that fall under the same theme. For example, the V_Ch of
+‘Access to Education’ and ‘Education Attainment’ are grouped within a
+V_Cat of “Knowledge and Education”.
+
+A Vulnerability Indicator (VI)
+
+is a direct measure or proxy for measuring a vulnerability
+characteristic (V_Ch). It is a quantitative measure of a single
+phenomenon. An example VI is the percentage of the population with a
+primary school level education, when this is used as a proxy for
+literacy (V_Ch) as part of an evaluation of the V_Cat of “Education”.
+VIs are most commonly used to indicate factors of social vulnerability,
+but in physical vulnerability are the equivalent of direct quantitative
+measures or proxies for vulnerability characteristics of the exposure.
+
+A Vulnerability Index (VIx)
+
+is a quantitative representation of multiple phenomena, i.e., of
+multiple V_Cat. It is a vulnerability model and is formed through a
+mathematical combination of several Vulnerability Indicators. An example
+VIx from the social vulnerability literature is the Human Development
+Index. In the physical vulnerability sphere VIx usually result from
+rapid visual surveys of buildings. Examples include the Building
+
+A Vulnerability Function (VF)
+
+is defined as a relationship between a parameter of loss (e.g.
+fatalities) and an intensity measure (IM). Such functions can be
+represented in the form of continuous or discrete relationships. VFs can
+be derived “directly” from regression on historical loss data
+(empirical), and through the elicitation of expert opinion (heuristic).
+VFs can also be derived “indirectly” from the combination of a Fragility
+Function and a Damage- to-Loss model.
+
+A Fragility Function (FF)
+
+describes the propensity of physical assets (e.g. buildings) to sustain
+damage under hazardous events. Formally, they express the probability of
+a damage state (DS) being reached or exceeded given a range of hazard
+intensity measure levels. FFs can be developed empirically,
+heuristically, but also analytically (i.e. where a
+numerical/computational model simulates the response of a structure
+under increasing hazard intensities).
+
+A Damage-to-Loss model (DtL)
+
+relates values of loss to the damage states expressed in a Fragility
+Function. For buildings and most infrastructure DtL models commonly take
+the form of repair to replacement cost ratios for the examined building
+class. In the case of pipelines and cables Repair Rates (RR), which
+describe the average number of repairs per unit length, are more common.
+In the case of casualties, Damage-to-Loss relationships often take the
+form of Lethality Ratios (LR), as the ratio of the number of people
+killed to the number of occupants present in a collapsed building
+
+____
+image:media/image29.png[image,width=624,height=684]
+____
+
+[#_Toc4416671 .anchor]####Figure 19 extract of MOVER vulnerability
+schema
+
+== Appendix C – Feature Comparison Matrix
+
+Comparisons between existing spatial data infrastructures and web
+mapping applications are illustrated in subsequent feature matrices to
+identify desirable functionality for the OpenDRR platform.
+
+[cols=",,,,,,",options="header",]
+|===
+|Features |FGP |OpenQuake |Arctic SDI |Risk Data Hub |One Geology |GIN
+|Framework |* * |* * |* * |* * |* * |* *
+
+|Centralized Catalog |x |  |x |x  |x | 
+
+|Geospatial Data Visualization App |x |x |x |  |x |x
+
+|Service Oriented Architecture |x |  |x |  |x | 
+
+|Metadata Management |x |  |  |  |  | 
+
+|Distributed Data Sources |x | |x | |x |x
+
+|Hosted Data Sources | |x | |x | |
+
+|Interchange Formats |* * |* * |* * |* * |* * |* *
+
+|CSV |  |x |  |  |  | 
+
+|Custom XML schema |x |x |x |  |x |x
+
+|JSON, GeoJSON |x |  |  |  |  | 
+
+|KML |x |x |  |  |  | 
+
+|RDF |  |  |  |  |  |x
+
+|Standard Image Formats (.tiff, .png, .jpeg) |  |  |  |  |x | 
+
+|external web service support (Open Street Map, Bing, Google, etc) |x | 
+|  |  |  | 
+
+|Supported Map Services |* * |* * |* * |* * |* * |* *
+
+|OGC WFS |x |  |x |  |x |x
+
+|OGC WMS |x |x |x |x  |x |x
+
+|OGC WCS |x |  |  |  |  |x
+
+|OGC CSW (Catalogue Service for the Web) |x |x |x |  |  |x
+
+|OGC WMTS |  |x |x |  |  | 
+
+|OGC WMS-T (time series) |  |  |x |  |  | 
+
+|KML |x |x |  |  |  | 
+
+|Raster REST (ESRI) |  |  |x |  |  | 
+
+|Standards |* * |* * |* * |* * |* * |* *
+
+|GeoSciML |  |  |  |  |x | 
+
+|GWML |  |  |  |  |  |x
+
+|Sendai Framework |  |x |  |x |  | 
+
+|ISO |x |  |x |  |x  | 
+
+|INSPIRE |  |  |x |x  |  | 
+
+|Catalog Capabilities |* * |* * |* * |* * |* * |* *
+
+|Search & discover |x |  |x | x |  | 
+
+|Update Data |x |  |  | x |  | 
+
+|Download Data |x |  |  | x |  | 
+
+|Web Map Capabilities |* * | | | | |
+
+|Search and add layers from catalog | | |x |x | |
+
+|Upload data | | | |x | |
+
+|See metadata | | |x |x |x |
+
+|Location Search | | |x |x | |
+
+|Filter features | | | |x | |
+
+|Combine layers | | | |x | |
+
+|Generate Reports | | | |x | |
+
+|Software - Database |* * |* * |* * |* * |* * |* *
+
+|ArcSDE |x |  |  |  |  | 
+
+|Oracle |x |  |  |  |  | 
+
+|PostGIS |x |  |  |x  |x | 
+
+|PostgreSQL |x |  |  |x  |  | 
+
+|  |  |  |  |  |  | 
+
+|Software - Catalogue |* * |* * |* * |* * |* * |* *
+
+|GeoNetwork |x |  |  |  |  | 
+
+|GeoPortal |x |  |  |  |  | 
+
+|EODMS (NRCAN) |x |  |  |  |  | 
+
+|GeoGratis API (NRCAN) |x |  |  |  |  | 
+
+|Software - Web Platform |* * |* * |* * |* * |* * |* *
+
+|ArcGIS Online |x |  |  |  |  | 
+
+|GeoNode | | | |x | |
+
+|MapServer (NRCAN) |x |  |  |  |  | 
+
+|Minnesota MapServer |  |  |  |  |x | 
+
+|Software - Web Server |* * |* * |* * |* * |* * |* *
+
+|ArcGIS Server |x |  |  |  |x | 
+
+|GeoServer |  |  |  |x  |x | 
+
+|QGIS Server |  |x |  |  |  | 
+|===
+
+== References
+
+Abbas, S., and Ojo, A. 2013. Towards a Linked Geospatial Data
+Infrastructure. Technology-Enabled Innovation for Democracy, Government
+and Governance: Proceedings of the Joint International Conference on
+Electronic Government and the Information Systems Perspective, and
+Electronic Democracy (EGOVIS/EDEM 2013), *8061*: 196–210. Available from
+http://link.springer.com/chapter/10.1007/978-3-642-40160-2_16.Antofie,
+T.E., Doherty, B., and Marin-Ferrer, M. 2018. Mapping of risk
+web-platforms and risk data: collection of good practices. Improving the
+access and share of curated EU-wide risk data for fostering DRM.
+doi:10.2760/93157.Arctic SDI. 2015. Arctic Spatial Data Infrastructure
+Framework Document.Barker, T. 2007. Climate Change 2007 : An Assessment
+of the Intergovernmental Panel on Climate Change. Change, *446*: 12–17.
+IPCC. doi:10.1256/004316502320517344.Epicentre. 2018. MOVER – Level 3
+Data schema for Physical and Social Vulnerability Indicators , Indices ,
+and Functions. London.FEMA. 2009. Comprehensive Data Management System
+CDMS Version 2.5 Data Dictionary. Washington. D.C.Guidoin, S., Marczak,
+P., Pane, J., and McKinney, J. 2014. Identifying recommended standards
+and best practices for open data. OpenNorth,
+http://geothink.ca/wp-content/uploads/2016/02/Identifying-Recommended-Standards-Open-Data-Open-North.pdfHarvey,
+F., Jones, J., Scheider, S., Iwaniak, A., Kaczmarek, I., Lukowicz, J.,
+and Strzelecki, M. 2014. Little Steps Towards Big Goals. Using Linked
+Data to Develop Next Generation Spatial Data Infrastructures (aka SDI
+3.0). _In_ Agile’2014. pp. 3–6.Harvey, M., Eltinay, N., Barnes, S.,
+Guerriero, R., and Caffa, M. 2018. Infrastructure for City Resilience.
+Available from http://creativecommons.org/licenses/by/3.0/igo/.JRC EU
+expert working group on disaster damage and loss data. 2015. Guidance
+for Recording and Sharing Disaster Damage and Loss Data. JRC Science and
+Policy Reports,: 28. doi:10.2788/186107.Kelman, I. 2018. Lost for Words
+Amongst Disaster Risk Science Vocabulary? International Journal of
+Disaster Risk Science, *9*: 281–291. Beijing Normal University Press.
+doi:10.1007/s13753-018-0188-3.Natural Resources Canada. 2015. Integrated
+Enterprise Architecture - Federal Geospatial Platform.Do Ó, F.A.,
+Poljanšek, K., and Vallés, A.C. 2018. Disaster damage and loss data for
+policy. Publication Office of the European Union.
+doi:10.2760/840421.Poljanšek, K., De Groeve, T., Marín Ferrer, M., and
+Clark, I. 2017. Science for disaster risk management 2017: knowing
+better and losing less. EUR 28034 EN, Publications Office of the
+European Union, Luxembourg. doi:10.2788/688605.Schade, S., and Lutz, M.
+2010. Opportunities and challenges for using linked data in inspire.
+_In_ CEUR Workshop Proceedings. pp. 3–7.Silva, V., Yepes-Estrada, C.,
+Dabbeek, J., and Martins, L. 2017. GED4ALL - Global Exposure Database
+for Multi-Hazard Risk Analysis - Inception Report. Pavia, Italy.UNISDR.
+2015. Sendai Framework for Disaster Risk Reduction 2015 - 2030.
+doi:A/CONF.224/CRP.1.Vilches-Blázquez, L.M., Villazón-Terrazas, B., De
+Leon, A., Priyatna, F., and Corcho, O. 2010. An approach to publish
+spatial data on the web: The geolinked data case. CEUR Workshop
+Proceedings, *691*.World Bank. 2014. Open Data for Resilience Initiative
+Field Guide. Washington, DC. Available from
+https://www.gfdrr.org/opendri.World Economic Forum. 2019. The Global
+Risks Report 2019 13th Edition.Xu, W., and Zlatanova, S. 2007.
+Ontologies for Disaster Management Response. _In_ Geomatics Solutions
+for Disaster Management. Springer Berlin Heidelberg, Berlin, Heidelberg.
+pp. 185–200. doi:10.1007/978-3-540-72108-6_13.
+
+== Glossary
+
+[cols=",",options="header",]
+|===
+|Abbreviation |Description
+|FGP |Federal Geospatial Platform
+|OpenDRR |Open Disaster Risk Reduction
+|NRCan |Natural Resources Canada
+|SDI |Spatial Data Infrastructure
+|GIS |Geographic Information System
+|===
