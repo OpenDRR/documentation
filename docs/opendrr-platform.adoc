@@ -1,3 +1,17 @@
+---
+authorName: Minerva Intelligence
+authorUrl: info@minervaintelligence.com
+contentTitle: "A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements"
+dateModified: 2019-03-25
+description: The Open Disaster Risk Reduction (OpenDRR) is a broad initiative to provide a linked data solution that addresses the needs of various stakeholders in the disaster risk assessment process on a common platform. The goal is to design and implement an open source platform that can be adopted by the global community to support disaster risk management, starting with earthquake risk reduction. The platform will be key to informing policy choices, empowering the decision-making process and encouraging risk mitigation practices among individuals and business owners.
+noContentTitle: false
+pageclass: wb-prettify all-pre
+subject:
+  en: [GV Government and Politics, Government services]
+  fr: [GV Gouvernement et vie politique, Services gouvernementaux]
+title: "A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements - Canada.ca"
+---
+
 = A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements
 :author: Minerva Intelligence 
 :email: info@minervaintelligence.com
