@@ -63,7 +63,7 @@ analytics_adobe: ""
 analytics_google: ""
 analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist"
-baseurl: "" # set this to your GitHub project name
+baseurl: "/documentation" # set this to your GitHub project name
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description:
   en: "Jekyll variant for GCWeb theme" # English site description and default description
