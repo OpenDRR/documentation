@@ -3,12 +3,12 @@ altLangPrefix: index
 authorName: Natural Resources Canada
 authorUrl:
 contentTitle:
-  fr: OpenDRR - Réduction des risques de catastrophe ouverte
-  en: OpenDRR - Open Disaster Risk Reduction
-dateModified: 2021-02-18
+  en: OpenDRR Documentation
+  fr: Documentation d'OpenDRR
+dateModified: 2021-02-19
 description:
-  en: Available datasets
-  fr: Ensembles de données disponibles
+  en: Documentation
+  fr: Documentation
 noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
@@ -21,31 +21,15 @@ title: OpenDRR - Canada.ca
 
 _[Note: This page is currently a work-in-progress proof-of-concept.]_
 
-Welcome!
+Welcome to the OpenDRR documentation site. Here you will find research papers about the OpenDRR platform.
 
-The OpenDRR platform is middleware between hazard or risk modeling environments like [OpenQuake](https://www.globalquakemodel.org/openquake) and end users who need to understand and evaluate risk to make economic and policy decisions.
+## Research Papers
 
-The end-user interface will operate as a web application using standard web browsers in desktop, tablet or hand-held device environments.
+* [A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements](../docs/opendrr-platform.html)
 
-## Downloads
-
-* [OpenDRR Data Downloads](https://opendrr.github.io/data/en/) at <https://opendrr.github.io/data/en/>
-
-## Documentation
-
-* Coming soon: _A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements_
-
-## Video Introduction
-
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-M3NHo-aW_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
-For more information, see [Terra-Cognita: How can we Accelerate Disaster Resilience Planning with OpenData?](https://www.urbc.ca/terra-cognita) organized by the [URBC 2020 Online Symposium](https://www.urbc.ca/).
-
-## For Developers
-
-* [Parent GitHub repository for the OpenDRR Platform](https://github.com/OpenDRR/opendrr-platform) at <https://github.com/OpenDRR/opendrr-platform>
+* For comparison:
+    * [The same document rendered with plain Asciidoctor](../docs/opendrr-platform-asciidoctor.html)
+    * [The same document rendered by GitHub](https://github.com/OpenDRR/documentation/blob/master/docs/opendrr-platform.adoc)
 
 
 {% if false %}
