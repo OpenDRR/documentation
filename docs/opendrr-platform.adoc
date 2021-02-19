@@ -118,7 +118,7 @@ The OpenDRR platform aims to provide tools to investigate, assess, and mitigate 
 The international community is becoming more aware of the risk related to natural disasters (Figure 1), and individuals, businesses and government leaders are increasingly receptive to the principles of systemic risk and disaster resilience planning.footnote:[Section 2.2 Business Case is reproduced from Services Agreement between Sage On Earth Consulting Ltd. and Minerva Intelligence Inc. (Sage On Earth Consulting Ltd., 2019)] However, they are unlikely to take actions in advance of a disaster without a clearly defined value proposition.
 
 [#_Ref4082640]
-image::extracted-media/media/image3.png[width=501,height=513,title="‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph. People are becoming more aware of the environmental changes and the related risks. Red dashed circle highlights the environmental risks. (Modified form World Economic Forum 2019)"]
+image::extracted-media/media/image3.png[width=501,height=513,align="center",title="‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph. People are becoming more aware of the environmental changes and the related risks. Red dashed circle highlights the environmental risks. (Modified form World Economic Forum 2019)"]
 
 
 The conventional approach is to motivate risk reduction decisions using quantitative risk assessment methods to analyze expected impacts and consequences, and to measure the relative costs and benefits of proactively investing in mitigation and/or adaptation measures. The expectation is that a positive rate of return on financial investments will provide the necessary incentive for individuals and organizations to take actions that will increase the disaster resilience of their homes, businesses and communities.
@@ -192,7 +192,7 @@ Individual property owners are responsible for the maintenance and safety of the
 Disaster Risk Reduction is a complex multi-variate analysis that requires detailed knowledge of both the hazardous phenomena (earthquake, floods, wildfires, etc.) and the human components of risk (Figure 2). In order to investigate the multiple data sources required for risk calculation and to share the risk analysis, both input and output data must be expressed in consistent, standardized terminology and format to enable analysis and increase efficiency. This data standardization is challenging, but necessary and highly rewarding (Abbas & Ojo, 2013; Guidoin, Marczak, Pane, & McKinney, 2014; Harvey et al., 2014; Schade & Lutz, 2010). Some terms have multiple interpretations across language, culture, and applications leading to confusion when used (Kelman, 2018). However, once the issue of inconsistent terminology is overcome, detailed hazard and risk taxonomies can be utilized to allow integrated data investigation (Xu & Zlatanova, 2007). Ontologies are valuable tools when it comes to hazard and risk analysis where a common understanding needs to be established for interoperability. Ontologies provide a basis for integration of relevant information across a distributed network of systems and facilitates hidden and implicit knowledge discovery.
 
 [#_Ref4082544]
-image::extracted-media/media/image4.png[width=624,height=270,title="The component for assessing risk. A) Hazard- the natural system component of risk. B) Exposure – the human component of risk. (Modified from World Bank 2014)"]
+image::extracted-media/media/image4.png[width=624,height=270,align="center",title="The component for assessing risk. A) Hazard- the natural system component of risk. B) Exposure – the human component of risk. (Modified from World Bank 2014)"]
 
 Standardization of data and vocabularies has fostered applications at national (for example: Vilches-Blázquez et al. 2010) and international levels (for example: Arctic SDI 2015). However, according to a review of several risk web platforms by the European Commission, the presentation of disaster risk information varies between platforms and hence is not easily interpreted for integrated analyses (Antofie, Doherty, & Marin-Ferrer, 2018). This section explores some current implementations of standardized vocabularies to be considered for OpenDRR.
 
@@ -209,12 +209,12 @@ The United Nations Office for Disaster Risk Reduction (UNISDR) developed the Sen
 The INSPIRE directive is a policy in the European Union aimed at standardizing the dissemination of spatial data. Spatial data in this context refers to any information that is tied to a location. This data spans a broad spectrum of disciplines and includes many different types, including monitoring station records, vector-based maps like geological maps, land cover maps and transportation maps or pixel-based raster maps for imagery or coverage data. All providers of spatial data in the public realm must adhere to INSPIRE from the national to the Municipal level. The vocabulary related to risk is described in the Natural Risk Zone (Figure 3) theme of Annex 3 and draws from the Sendai Framework guideline (EU expert working group on disaster damage and loss data, 2015; INSPIRE Infrastructure for Spatial Information in Europe, 2013).
 
 [#_Ref4158628]
-image::extracted-media/media/image5.png[width=588,height=765,title="INSPIRE Natural Risk Zone UML diagram https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:12:1:8552"]
+image::extracted-media/media/image5.png[width=588,height=765,align="center",title="INSPIRE Natural Risk Zone UML diagram https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:12:1:8552"]
 
 The Natural Risk Zone data theme includes vocabularies to assess the hazard and the human component of risk. The terminology to describe detailed building characteristics resides in the INSPIRE building theme of Annex 3. This building taxonomy is built on top of the CityGML initiative (Figure 4) (INSPIRE Thematic Working Group Buildings, 2013). The CityGML taxonomy has as a primary objective the storing and exchanging of virtual 3D city modelsfootnote:[CityGML Initiative http://www.citygml.org/], focused on building geometry and location, not on the engineering aspects of building construction.
 
 [#_Toc4416656]
-image::extracted-media/media/image6.png[https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/EARoot/EA2/EA3/EA2/EA2/EA7912.png,width=555,height=519,title="The INSPIRE Building UML diagram (https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:2:2:7911)"]
+image::extracted-media/media/image6.png[https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/EARoot/EA2/EA3/EA2/EA2/EA7912.png,width=555,height=519,align="center",title="The INSPIRE Building UML diagram (https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?goto=2:3:2:2:7911)"]
 
 ==== 4.1.3 GEM – Global Earthquake Model
 
@@ -229,27 +229,27 @@ The UK Department for International Development and the Global Facility for Disa
 The integration of geo-information to help decision-making prior to and during an emergency is fundamental for the OpenDRR platform. The enabler for this integration is an ontology for disaster risk reduction in Canada that harmonizes existing vocabularies for hazard and risk (SENDAI, INSPIRE, GEM) and includes new concepts where needed to support semantic interoperability and natural language reasoning (Figure 5).
 
 [#_Ref4162595]
-image::extracted-media/media/image7.png[width=604,height=526,title="From OpenQuake to OpenDRR and end users (M. Journeay, personal communication)"]
+image::extracted-media/media/image7.png[width=604,height=526,align="center",title="From OpenQuake to OpenDRR and end users (M. Journeay, personal communication)"]
 
 Detailed vocabulary assessment is needed to evaluate aligning GEM terminology to INSPIRE standards, especially regarding the building taxonomy. The GEM building taxonomy has been tailored to the earthquake study needs while the INSPIRE-CityGML is not. For example, GEM vocabulary includes categories for building materials e.g. ‘metal (excluding steel)’ for roofs while CityGML has only a ‘metal’ generic categoryfootnote:[CityGML Codelist for Material of Roof http://hub.geosmartcity.eu/registry/codelist/MaterialOfRoofValue/]. In order to have consistency between systems, a clear distinction needs to be made between building performance indicators that are based on building use and building construction indicators, based on building structure. Construction details are important input for estimations of building damage in flood or earthquake scenarios, hence the GEM taxonomy seems more applicable to the OpenDRR platform scope.
 
 The OpenDRR ontology should ultimately be structured to satisfy the identified use cases (6.0 OpenDRR Target State). Development of an ontology for data integration will follow standard workflow processes (Figure 6).
 
 [#_Ref4162630]
-image::extracted-media/media/image8a.png[width=500,title="Steps for an ontology creation. (Noy & McGuinness, 2001)"]
+image::extracted-media/media/image8a.png[width=500,align="center",title="Steps for an ontology creation. (Noy & McGuinness, 2001)"]
 
 [arabic]
 . Determine scope. Review use cases and stakeholder analysis (Section 3).
 . Enumerate terms. Identify outputs from OpenQuake and the link to the OpenDRR indicator (Figure 7):
 
 [#_Ref4161660]
-image::extracted-media/media/image8.png[width=415,height=457,title="OpenDRR risk metrics table summary (M. Journeay, personal communication)"]
+image::extracted-media/media/image8.png[width=415,height=457,align="center",title="OpenDRR risk metrics table summary (M. Journeay, personal communication)"]
 
 [arabic, start=3]
 . Identify existing vocabularies that are in use and could be harmonized (Figure 8). Terminology is needed to specify categorical data values, identify algorithms for calculating risk metrics, and to communicate risk assessment conclusions to both technical users and the general public.
 
 [#_Ref4161782]
-image::extracted-media/media/image9.png[width=527,height=203,title="OpenDRR taxonomy table summary (M. Journeay, personal communication)"]
+image::extracted-media/media/image9.png[width=527,height=203,align="center",title="OpenDRR taxonomy table summary (M. Journeay, personal communication)"]
 
 [arabic, start=4]
 . Define relations between concepts. Implement indicators vocabularies
@@ -273,7 +273,7 @@ The Federal Geospatial Platform is a collaborative online environment that enabl
 * Standardize information management
 
 [#_Ref4082180]
-image::extracted-media/media/image10.jpg[width=598,height=413,title="OpenDRR (red squares) in the context of the Federal Geospatial Platform (FGP) (Natural Resources Canada, 2015)"]
+image::extracted-media/media/image10.jpg[width=598,height=413,align="center",title="OpenDRR (red squares) in the context of the Federal Geospatial Platform (FGP) (Natural Resources Canada, 2015)"]
 
 === 5.2 Risk Management Platforms
 
@@ -303,7 +303,7 @@ The OpenDRR platform will extend the functionality illustrated in the BC Earthqu
 * Uploading building inventories and performing risk calculations
 
 [#_Ref4397587]
-image::extracted-media/media/image11.png[width=624,height=427,title="British Columbia Earthquake Risk Portal - Example of Earthquake Risk Reporting Tool"]
+image::extracted-media/media/image11.png[width=624,height=427,align="center",title="British Columbia Earthquake Risk Portal - Example of Earthquake Risk Reporting Tool"]
 
 ==== 5.2.5 RiskScape – New Zealand
 
@@ -314,7 +314,7 @@ The OpenDRR platform should draw on the modular design of RiskScape when designi
 
 
 [#_Ref4397657]
-image::extracted-media/media/image12.jpeg[width=377,height=203,title="Generic Framework of RiskScape for risk assessment tools in OpenDRR (https://wiki.riskscape.org.nz/[https://wiki.riskscape.org.nz)"]
+image::extracted-media/media/image12.jpeg[width=377,height=203,align="center",title="Generic Framework of RiskScape for risk assessment tools in OpenDRR (https://wiki.riskscape.org.nz/[https://wiki.riskscape.org.nz)"]
 
 == 6.0 OpenDRR Target State
 
@@ -325,10 +325,10 @@ The target state for OpenDRR is to provide services for data access, search and 
 OpenDRR will need to provide a variety of analysis and reporting tools for decision support. A web GIS platform is recommended because it has the greatest flexibility and accessibility to support a wide range of operations and a diverse user base (Figure 13). Although the platform will initially focus on earthquake risk management, drawing on the functionality of the OpenQuake Platform, the methodological processes should be designed in a modular fashion in order to support risk management for multiple hazards.
 
 [#_Ref4079638]
-image::extracted-media/media/image13.png[width=529,height=544,title="OpenDRR Integration and Delivery of Information within Federal Geospatial Platform. (Natural Resources Canada, 2015)"]
+image::extracted-media/media/image13.png[width=529,height=544,align="center",title="OpenDRR Integration and Delivery of Information within Federal Geospatial Platform. (Natural Resources Canada, 2015)"]
 
 [#_Ref4398603]
-image::extracted-media/media/image13a.png[width=500,title="User-Centric Approach to Open, Decision Support Systems"]
+image::extracted-media/media/image13a.png[width=500,align="center",title="User-Centric Approach to Open, Decision Support Systems"]
 
 The following sections describe the high-level requirements that will guide the development of OpenDRR towards the target state.
 
@@ -744,7 +744,7 @@ image:extracted-media/media/image23.png[C:\Users\slam\AppData\Local\Microsoft\Wi
 Definition of standards is a very important step in many applications (Figure 14), including the OpenDRR platform.
 
 [#_Ref4404024]
-image::extracted-media/media/image24.png[Image result for standard cartoon,width=500,height=283,title="The importance of definition of standards. (https://xkcd.com/927/)"]
+image::extracted-media/media/image24.png[Image result for standard cartoon,width=500,height=283,align="center",title="The importance of definition of standards. (https://xkcd.com/927/)"]
 
 === B1 UNISDR - Sendai Framework for Disaster Risk Reduction
 
@@ -805,17 +805,17 @@ Global target G: Substantially increase the availability of and access to multi-
 * G-6 Percentage of population exposed to or at risk from disasters protected through pre-emptive evacuation following early warning.
 
 [#_Ref4399720]
-image::extracted-media/media/image25.png[width=559,height=759,title="Metrics for Risk assessment. Boxes with letter-number prefixes are from the Sendai Framework. Other metrics are specific to the OpenDRR"]
+image::extracted-media/media/image25.png[width=559,height=759,align="center",title="Metrics for Risk assessment. Boxes with letter-number prefixes are from the Sendai Framework. Other metrics are specific to the OpenDRR"]
 
 === B2 INSPIRE - Infrastructure for Spatial Information in the European Community
 
 INSPIRE Natural Risk Zone Application schema encompasses both hazard and risk terminology (Figure 16). The Hazard terminology appears to be insufficient to describe hazards in detail, for example there is the term ‘Landslide’ but it is not possible to describe the type of landslide (Figure 17). This is one of the many examples where INSPIRE need further implementation.
 
 [#_Ref4400577]
-image::extracted-media/media/image26.png[width=518,height=610,title="Natural Risk Zone Application schema http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectPreselection.action"]
+image::extracted-media/media/image26.png[width=518,height=610,align="center",title="Natural Risk Zone Application schema http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectPreselection.action"]
 
 [#_Ref4400874]
-image::extracted-media/media/image27.png[width=624,height=260,title="Radial graph view of Natural Hazard Category Value code list http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=10621"]
+image::extracted-media/media/image27.png[width=624,height=260,align="center",title="Radial graph view of Natural Hazard Category Value code list http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=10621"]
 
 === B3 GEM – Global Earthquake Model
 
@@ -842,7 +842,7 @@ Social vulnerability factors (Figure 18)
 * Lead times dispersion: Level of uncertainty associated with the lead times
 
 [#_Ref4400514]
-image::extracted-media/media/image28.png[width=624,height=480,title="Factors of social vulnerability after (Cutter, Boruff, & Shirley, 2003)"]
+image::extracted-media/media/image28.png[width=624,height=480,align="center",title="Factors of social vulnerability after (Cutter, Boruff, & Shirley, 2003)"]
 
 Building Taxonomy
 
@@ -891,7 +891,7 @@ A Damage-to-Loss model (DtL)
 relates values of loss to the damage states expressed in a Fragility Function. For buildings and most infrastructure DtL models commonly take the form of repair to replacement cost ratios for the examined building class. In the case of pipelines and cables Repair Rates (RR), which describe the average number of repairs per unit length, are more common. In the case of casualties, Damage-to-Loss relationships often take the form of Lethality Ratios (LR), as the ratio of the number of people killed to the number of occupants present in a collapsed building
 
 [#_Toc4416671]
-image::extracted-media/media/image29.png[image,width=624,height=684,title="Extract of MOVER vulnerability schema"]
+image::extracted-media/media/image29.png[image,width=624,height=684,align="center",title="Extract of MOVER vulnerability schema"]
 
 == Appendix C – Feature Comparison Matrix
 
