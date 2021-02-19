@@ -21,7 +21,7 @@ title: OpenDRR - Canada.ca
 
 _[Remarque : Cette page est une preuve de concept en cours.]_
 
-BBienvenue sur le site de documentation d'OpenDRR. Vous trouverez ici des documents de recherche sur la plate-forme OpenDRR.
+Bienvenue sur le site de documentation d'OpenDRR. Vous trouverez ici des documents de recherche sur la plate-forme OpenDRR.
 
 ## Documents de recherche
 
