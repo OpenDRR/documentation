@@ -1,0 +1,177 @@
+{% if page.leaflet %}
+<div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
+<style>
+  .legend {
+    line-height: 18px;
+    color: #555;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 6px 8px;
+  }
+  .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7;
+  }
+</style>
+<script src="https://unpkg.com/{{ site.leaflet }}/dist/leaflet.js"></script>
+<script>
+
+// L.Icon.Default.imagePath = '{{ "images/carto/" | prepend: site.baseurl }}';
+
+var viirs = 'VIIRS_SNPP_CorrectedReflectance_TrueColor';
+// var modis = 'MODIS_Terra_CorrectedReflectance_TrueColor';
+
+var basemap = {
+  'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    'attribution': '&copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name={{ site.title }}">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Thunderforest': L.tileLayer('https://{s}.tile.thunderforest.com/' + '{% if include.tf_layer %}{{ include.tf_layer }}{% else %}outdoors{% endif %}' + '/{z}/{x}/{y}.png', {
+    'attribution': 'Maps &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name={{ site.title }}">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Carto': L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/' + '{% if include.c_layer %}{{ include.c_layer }}{% else %}dark_all{% endif %}' + '/{z}/{x}/{y}.png', {
+    'attribution': '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name={{ site.title }}">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Esri': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    'attribution': 'Tiles &copy; Esri, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name={{ site.title }}">OpenStreetMap</a> contributors',
+    'minZoom': 3,
+    'maxZoom': 18
+  }),
+  'Gibs': L.tileLayer('https://map1.vis.earthdata.nasa.gov/wmts-webmerc/' + viirs + '/default/' + '{{ page.date| date: "%Y-%m-%d" }}' + '/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg', {
+    'attribution': 'Maps &copy; <a href="http://earthdata.nasa.gov">Gibs</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name={{ site.title }}">OpenStreetMap</a> contributors',
+    'minZoom': 3,
+    'maxZoom': 9
+  })
+};
+
+var map = L.map('map', {
+  {% if page.latlng %}
+  'center': [{{ page.latlng[0] }}, {{ page.latlng[1] }}],
+  {% endif %}
+  {% if page.zoom %}
+  'zoom': {{ page.zoom }},
+  {% endif %}
+  {% if include.leaflet_tile %}
+  'layers': [basemap.{{ include.leaflet_tile }}]
+  {% else %}
+  'layers': [basemap.OpenStreetMap]
+  {% endif %}
+	
+});
+map.scrollWheelZoom.disable();
+
+{% if page.mlatlng %}
+var marker = L.marker(
+  [{{ page.mlatlng[0] }}, {{ page.mlatlng[1] }}]
+).addTo(map);
+{% endif %}
+
+{% if page.icon %}
+var xmarker = L.icon({
+  iconUrl: '{{ page.icon | prepend: site.baseurl }}',
+  iconRetinaUrl: '{{ page.icon | prepend: site.baseurl }}',
+  iconSize: [37, 50],
+  iconAnchor: [18.5, 50],
+  popupAnchor: [0, -51]
+});
+
+var marker = L.marker([{{ page.mlatlng[0] }}, {{ page.mlatlng[1] }}], {
+  icon: {{ page.icon }}
+}).addTo(map);
+{% endif %}
+
+{% if page.mpop or page.icon %}
+marker.bindPopup("{{ page.mpop }}").openPopup();
+{% endif %}
+
+{% if page.layer %}
+var layer_obj;
+fetch( "{{ site.baseurl }}{{page.layer}}" ).then(( resp ) => {
+    return resp.json();
+}).then(( data ) => {
+    layer_obj = data;
+    _addGeoJSONObjToMap( layer_obj, map );
+}).catch(( err ) => {
+    console.log( err );
+    _addGeoJSONObjToMap( layer_obj, map );
+});
+{% endif %}
+
+function _onEachFeature( feature, layer ) {
+    var potentialPopup = ""
+    if ( feature.properties && feature.properties.popupContent ) {
+        potentialPopup += feature.properties.popupContent;
+    }
+    if ( feature.properties && feature.properties.href ) {
+        potentialPopup += 
+            '<a href="' + feature.properties.href + '">' + 
+                '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
+    if( potentialPopup ){
+        layer.bindPopup(potentialPopup );
+    }
+}
+
+function _addGeoJSONObjToMap( leafletItem, map ){
+  var geojson = L.geoJSON( leafletItem, { 
+      onEachFeature: _onEachFeature,
+      style: featureStyle
+  } );
+  geojson.addTo( map );
+  {% if !page.mlatlng %}
+  map.fitBounds(geojson.getBounds());
+  {% endif %}
+}
+
+function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+
+function featureStyle(feature) {
+    return {
+        fillColor: getColor(feature.properties.{{page.featureClass}}),
+        weight: 0.5,
+        opacity: 1,
+        color: 'white',
+        dashArray: '0',
+        fillOpacity: 0.5
+    };
+}
+
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
+</script>
+{% endif %}
