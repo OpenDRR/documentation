@@ -9,7 +9,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: "A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements - Canada.ca"
+title: "[Rendered with GitHub Actions] A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements - Canada.ca"
 ---
 
 = A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements
@@ -21,9 +21,9 @@ title: "A Federated OpenDRR Platform to Support Disaster Resilience Planning in 
 
 ==== List of Figures
 
-link:#_Ref4082640[Figure 1 ‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph.]
+link:#_Ref4082640[Figure 1 ‘The Global Risks Landscape 2019’ Impact–Likelihood of risk perception graph.]
 
-link:#_Ref4082544[Figure 2 The components for assessing risk.]
+link:#_Ref4082544[Figure 2 The components for assessing risk]
 
 link:#_Ref4158628[Figure 3 INSPIRE Natural Risk Zone UML diagram]
 
@@ -43,21 +43,21 @@ link:#_Ref4397587[Figure 10 British Columbia Earthquake Risk Portal - Example of
 
 link:#_Ref4397657[Figure 11 Generic Framework of RiskScape for risk assessment tools in OpenDRR]
 
-link:#_Ref4079638[Figure 12 OpenDRR Integration and Delivery of Information within Federal Geospatial Platform.]
+link:#_Ref4079638[Figure 12 OpenDRR Integration and Delivery of Information within Federal Geospatial Platform]
 
 link:#_Ref4398603[Figure 13 User-Centric Approach to Open, Decision Support Systems]
 
-link:#_Ref4404024[Figure 14. The importance of definition of standards.]
+link:#_Ref4404024[Figure 14 The importance of definition of standards]
 
-link:#_Ref4399720[Figure 15 Metrics for Risk assessment.]
+link:#_Ref4399720[Figure 15 Metrics for Risk assessment]
 
 link:#_Ref4400577[Figure 16 Natural Risk Zone Application schema]
 
-link:#_Ref4400874[Figure 17 Radial graph view of Natural Hazard Category Value code list.]
+link:#_Ref4400874[Figure 17 Radial graph view of Natural Hazard Category Value code list]
 
 link:#_Ref4400514[Figure 18 Factors of social vulnerability]
 
-link:#_Toc4416671[Figure 19 Extract of MOVER vulnerability schema ]
+link:#_Toc4416671[Figure 19 Extract of MOVER vulnerability schema]
 
 ==== List of Tables
 
@@ -131,8 +131,9 @@ The OpenDRR platform aims to provide tools to investigate, assess, and mitigate 
 
 The international community is becoming more aware of the risk related to natural disasters (Figure 1), and individuals, businesses and government leaders are increasingly receptive to the principles of systemic risk and disaster resilience planning.footnote:[Section 2.2 Business Case is reproduced from Services Agreement between Sage On Earth Consulting Ltd. and Minerva Intelligence Inc. (Sage On Earth Consulting Ltd., 2019)] However, they are unlikely to take actions in advance of a disaster without a clearly defined value proposition.
 
-[#_Ref4082640]
-image::extracted-media/media/image3.png[width=501,height=513,align="center",title="‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph. People are becoming more aware of the environmental changes and the related risks. Red dashed circle highlights the environmental risks. (Modified form World Economic Forum 2019)"]
+[#_Ref4082640.figure]
+.‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph. People are becoming more aware of the environmental changes and the related risks. Red dashed circle highlights the environmental risks. (Modified form World Economic Forum 2019)
+image::extracted-media/media/image3.png[width=501,height=513,align="center",stitle="‘The Global Risk Landscape 2019’ Impact- Likelihood of risk perception graph. People are becoming more aware of the environmental changes and the related risks. Red dashed circle highlights the environmental risks. (Modified form World Economic Forum 2019)"]
 
 
 The conventional approach is to motivate risk reduction decisions using quantitative risk assessment methods to analyze expected impacts and consequences, and to measure the relative costs and benefits of proactively investing in mitigation and/or adaptation measures. The expectation is that a positive rate of return on financial investments will provide the necessary incentive for individuals and organizations to take actions that will increase the disaster resilience of their homes, businesses and communities.
