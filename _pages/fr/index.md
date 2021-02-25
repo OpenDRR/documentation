@@ -3,7 +3,7 @@ altLangPrefix: index
 authorName: Ressources naturelles Canada
 authorUrl: 
 contentTitle: Documentation d'OpenDRR
-dateModified: 2021-02-19
+dateModified: 2021-02-25
 description:
   en: "OpenDRR"
   fr: "OpenDRR"
@@ -28,5 +28,6 @@ Bienvenue sur le site de documentation d'OpenDRR. Vous trouverez ici des documen
 * [A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements](../docs/opendrr-platform.html) (en anglais)
 
 * En comparaison :
+    * [Le même document avant la mise en forme du tableau fixe](../docs/opendrr-platform-before.html)
     * [Le même document rendu avec Asciidoctor ordinaire](../docs/opendrr-platform-asciidoctor.html)
     * [Le même document rendu par GitHub](https://github.com/OpenDRR/documentation/blob/master/docs/opendrr-platform.adoc)

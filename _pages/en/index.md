@@ -5,7 +5,7 @@ authorUrl:
 contentTitle:
   en: OpenDRR Documentation
   fr: Documentation d'OpenDRR
-dateModified: 2021-02-19
+dateModified: 2021-02-25
 description:
   en: Documentation
   fr: Documentation
@@ -28,6 +28,7 @@ Welcome to the OpenDRR documentation site. Here you will find research papers ab
 * [A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements](../docs/opendrr-platform.html)
 
 * For comparison:
+    * [The same document before table formatting fixes](../docs/opendrr-platform-before.html)
     * [The same document rendered with plain Asciidoctor](../docs/opendrr-platform-asciidoctor.html)
     * [The same document rendered by GitHub](https://github.com/OpenDRR/documentation/blob/master/docs/opendrr-platform.adoc)
 
