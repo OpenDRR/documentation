@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+   <title>dsra_sim6p8_cr2022_rlz_1_b0_full_retrofit_agg_view</title>
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+   <meta name="description" content="DSRA full retrofit classified on sCR_Debris_r2" />
+      <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/wet-boew/css/noscript.css" /></noscript>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "dsra_sim6p8_cr2022_rlz_1_b0_full_retrofit_agg_view",
+            "url": "",
+            "author": {
+               "@type": "GovernmentOrganization",
+               "name": "",
+               "url": "",
+               "parentOrganization": {
+                  "@type": "GovernmentOrganization",
+                  "name": "Government of Canada",
+                  "url": "http://www.canada.ca/"
+               }
+            },
+            "description": "DSRA full retrofit classified on sCR_Debris_r2"
+        }
+    </script>
+ </head>
+  <!--<body vocab="http://schema.org/" typeof="WebPage"> -->
+ <body  class="page" vocab="http://schema.org/" typeof="WebPage">
+   <nav>
+		<ul id="wb-tphp">
+			<li class="wb-slc">
+				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+			</li>
+			<li class="wb-slc visible-sm visible-md visible-lg">
+				<a class="wb-sl" href="#wb-info">Skip to About this site</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<div id="wb-bnr" class="container">
+			<section id="wb-lng" class="text-right">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li><a lang="fr" hreflang="fr" href="/fr/index.html">Français</a></li>
+				</ul>
+			</section>
+			<div class="row">
+				<div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+					<a href="https://www.canada.ca/en.html" property="url">
+						<img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="page.i18n.tmpl-gc-wmms[page.lang]" property="logo" />
+						<span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+					</a>
+					<meta property="areaServed" typeOf="Country" content="Canada" />
+					<link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" />
+				</div>
+				<section id="wb-srch" class="col-lg-8 text-right">
+					<h2>Search</h2>
+					<form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+						<div class="form-group">
+							<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca" />
+							<datalist id="wb-srch-q-ac">
+							</datalist>
+						</div>
+						<div class="form-group submit">
+							<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</header>
+    <!-- Static header ends -->
+   <main property="mainContentOfPage" class="container
+    " typeof="WebPageElement">
+     <p><a href="../">back</a></p>
+<h1 id="dsra-full-retrofit">DSRA Full Retrofit</h1>
+<p>DSRA full retrofit classified on sCR_Debris_r2</p>
+<div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
+<style>
+  .legend {
+    line-height: 18px;
+    color: #555;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 6px 8px;
+  }
+  .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7;
+  }
+</style>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script>
+// L.Icon.Default.imagePath = '/documentationimages/carto/';
+var viirs = 'VIIRS_SNPP_CorrectedReflectance_TrueColor';
+// var modis = 'MODIS_Terra_CorrectedReflectance_TrueColor';
+var basemap = {
+  'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    'attribution': '&copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name=OpenDRR - Canada.ca">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Thunderforest': L.tileLayer('https://{s}.tile.thunderforest.com/' + 'outdoors' + '/{z}/{x}/{y}.png', {
+    'attribution': 'Maps &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name=OpenDRR - Canada.ca">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Carto': L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/' + 'dark_all' + '/{z}/{x}/{y}.png', {
+    'attribution': '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name=OpenDRR - Canada.ca">OpenStreetMap</a> contributors',
+    'minZoom': 2,
+    'maxZoom': 19
+  }),
+  'Esri': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    'attribution': 'Tiles &copy; Esri, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name=OpenDRR - Canada.ca">OpenStreetMap</a> contributors',
+    'minZoom': 3,
+    'maxZoom': 18
+  }),
+  'Gibs': L.tileLayer('https://map1.vis.earthdata.nasa.gov/wmts-webmerc/' + viirs + '/default/' + '2021-03-12' + '/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg', {
+    'attribution': 'Maps &copy; <a href="http://earthdata.nasa.gov">Gibs</a>, &copy; <a href="https://osmlab.github.io/attribution-mark/copyright/?name=OpenDRR - Canada.ca">OpenStreetMap</a> contributors',
+    'minZoom': 3,
+    'maxZoom': 9
+  })
+};
+var map = L.map('map', {
+  'center': [49.24, -123.11],
+  'zoom': 10,
+  'layers': [basemap.OpenStreetMap]
+});
+map.scrollWheelZoom.disable();
+var layer_obj;
+fetch( "/documentation/assets/data/dsra_sim6p8_cr2022_rlz_1_b0_full_retrofit_agg_view.geojson" ).then(( resp ) => {
+    return resp.json();
+}).then(( data ) => {
+    layer_obj = data;
+    _addGeoJSONObjToMap( layer_obj, map );
+}).catch(( err ) => {
+    console.log( err );
+    _addGeoJSONObjToMap( layer_obj, map );
+});
+function _onEachFeature( feature, layer ) {
+    var potentialPopup = ""
+    if ( feature.properties && feature.properties.popupContent ) {
+        potentialPopup += feature.properties.popupContent;
+    }
+    if ( feature.properties && feature.properties.href ) {
+        potentialPopup += 
+            '<a href="' + feature.properties.href + '">' + 
+                '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
+    if( potentialPopup ){
+        layer.bindPopup(potentialPopup );
+    }
+}
+function _addGeoJSONObjToMap( leafletItem, map ){
+  var geojson = L.geoJSON( leafletItem, { 
+      onEachFeature: _onEachFeature,
+      style: featureStyle
+  } );
+  geojson.addTo( map );
+}
+function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+function featureStyle(feature) {
+    return {
+        fillColor: getColor(feature.properties.sCR_Debris_r2),
+        weight: 0.5,
+        opacity: 1,
+        color: 'white',
+        dashArray: '0',
+        fillOpacity: 0.5
+    };
+}
+var legend = L.control({position: 'bottomright'});
+legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        labels = [];
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+    return div;
+};
+legend.addTo(map);
+</script>
+<h2 id="downloads">Downloads</h2>
+<p><a href="/documentation/assets/data/dsra_sim6p8_cr2022_rlz_1_b0_full_retrofit_agg_view.geojson">GeoJSON</a></p>
+ <div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<details class="brdr-0">
+				<summary class="btn btn-default text-center">Report a problem on this page</summary>
+				<div class="well row">
+					<div class="gc-rprt-prblm">
+						<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+							<form action="#">
+								<fieldset>
+									<legend><span class="field-name">Please select all that apply: </span></legend>
+										<div class="checkbox">
+											<label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem" value="Something is broken" id="problem1" />Something is broken</label>
+										</div>
+										<div class="form-group hide" id="broken">
+											<label for="problem1-detail">Provide more details (optional):</label>
+											<input type="text" class="form-control full-width" id="problem1-detail">
+										</div>
+										<div class="checkbox">
+											<label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem" value="It has spelling or grammar mistakes" id="problem2" />The page has spelling or grammar mistakes</label>
+										</div>
+										<div class="form-group hide" id="spelling">
+											<label for="problem2-detail">Provide more details (optional):</label>
+											<input type="text" class="form-control full-width" id="problem2-detail">
+										</div>
+										<div class="checkbox">
+											<label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem" value="The information is wrong" id="problem3" />The information is wrong</label>
+										</div>
+										<div class="form-group hide" id="wrong">
+											<label for="problem3-detail">Provide more details (optional):</label>
+											<input type="text" class="form-control full-width" id="problem3-detail">
+										</div>
+										<div class="checkbox">
+											<label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem" value="The information is outdated" id="problem4" />The information is outdated</label>
+										</div>
+										<div class="form-group hide" id="outdated">
+											<label for="problem4-detail">Provide more details (optional):</label>
+											<input type="text" class="form-control full-width" id="problem4-detail">
+										</div>
+										<div class="checkbox">
+											<label for="problem5"><input type="checkbox" data-reveal="#find" name="problem" value="I can’t find what I’m looking for" id="problem5" />I can’t find what I’m looking for</label>
+										</div>
+										<div class="form-group hide" id="find">
+											<label for="problem5-detail">Describe what you’re looking for (optional):</label>
+											<input type="text" class="form-control full-width" id="problem5-detail">
+										</div>
+										<div class="checkbox">
+											<label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem" value="It’s confusing" id="problem6" />Other</label>
+										</div>
+										<div class="form-group hide" id="confusing">
+											<label for="problem6-detail">Provide more details (optional):</label>
+											<input type="text" class="form-control full-width" id="problem6-detail">
+										</div>
+								</fieldset>
+								<button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
+							</form>
+						</div>
+						<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+							<h3>Thank you for your help!</h3>
+							<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
+						</div>
+					</div>
+				</div>
+			</details>
+		</div>
+		<div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd><time property="dateModified">2020-05-02</time></dd>
+	</dl>
+</div>
+</main>
+    <!-- Static footer starts -->
+   <footer id="wb-info">
+	<div class="landscape">
+		<nav class="container wb-navcurr">
+			<h2 class="wb-inv"></h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+</ul>
+		</nav>
+	</div>
+	<div class="brand">
+	<div class="container">
+		<div class="row ">
+			<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+				<h2 class="wb-inv">About this site</h2>
+				<ul>
+					<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+					<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+					<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="col-xs-6 visible-sm visible-xs tofpg">
+				<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+			</div>
+			<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+				<img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!-- 
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+   -->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+ </body>
+</html>
