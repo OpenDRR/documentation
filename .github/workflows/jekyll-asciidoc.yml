@@ -10,7 +10,7 @@ on:
 jobs:
   jekyll:
     name: Jekyll with AsciiDoc
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout code
@@ -22,13 +22,19 @@ jobs:
           ref: gh-pages-source
 
       # Runs a set of commands using the runners shell
-      - name: Anthony's turn
+      - name: Discover some system information
         run: |
+          date
           cat /etc/os-release
           uname -a
-          pwd
-          ls -lR
+          cat /proc/cpuinfo
           git branch -a
+          pwd
+          ls -l /usr/local/bin/bundle
+          #ls -lR
+          df -h
+          free -h
+          dpkg -l
 
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
