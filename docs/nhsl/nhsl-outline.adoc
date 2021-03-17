@@ -1,0 +1,159 @@
+== Abstract
+
+== Table of Contents
+
+link:#abstract[Abstract 1]
+
+link:#table-of-contents[Table of Contents 1]
+
+link:#_Toc66089190[Executive Summary 4]
+
+link:#_Toc66089191[Context and Motivation 4]
+
+link:#_Toc66089192[Implementing the Sendai Framework 4]
+
+link:#_Toc66089193[Canada’s National Risk Profile 4]
+
+link:#_Toc66089194[Translating Words into Action 4]
+
+link:#_Toc66089195[Living with Risk 4]
+
+link:#_Toc66089196[The Risk Domain 4]
+
+link:#_Toc66089197[Natural Hazards 4]
+
+link:#_Toc66089198[Physical Exposure 4]
+
+link:#_Toc66089199[Social Vulnerability 4]
+
+link:#_Toc66089200[Assessing Multi-Hazard Threat 4]
+
+link:#_Toc66089201[Scope of Work and Intended Audiences 4]
+
+link:#_Toc66089202[Patterns of Human Settlement 4]
+
+link:#_Toc66089203[Natural Hazard Threats 5]
+
+link:#_Toc66089204[Part I: Patterns of Human Settlement 8]
+
+link:#_Toc66089205[Settled Areas 8]
+
+link:#_Toc66089206[Measurement 8]
+
+link:#_Toc66089207[Results & Intended Use 10]
+
+link:#_Toc66089208[Urban Form and Function 11]
+
+link:#_Toc66089209[Functional Land Use 12]
+
+link:#_Toc66089210[Land Use Archetypes 12]
+
+link:#_Toc66089211[Model Validation 14]
+
+link:#_Toc66089212[Arcadia: A Case Study Example 14]
+
+link:#_Toc66089213[Exposure to Natural Hazards 15]
+
+link:#_Toc66089214[Buildings 16]
+
+link:#_Toc66089215[Step 1: Taxonomic Classification 16]
+
+link:#_Toc66089216[Step 2: Building Mapping Schemes 17]
+
+link:#_Toc66089217[Step 3: Distribution of Building Archetypes 17]
+
+link:#_Toc66089218[People 19]
+
+link:#_Toc66089219[Step 4: Population Dynamics 19]
+
+link:#_Toc66089220[Capital Assets 21]
+
+link:#_Toc66089221[Step 5: Asset Valuation 21]
+
+link:#_Toc66089222[Model Validation 21]
+
+link:#_Toc66089223[Physical Exposure of Arcadia 22]
+
+link:#_Toc66089224[Social Fabric 23]
+
+link:#_Toc66089225[Community Archetypes 24]
+
+link:#_Toc66089226[Model Development 25]
+
+link:#_Toc66089227[Step 1: Model Design and Structure 25]
+
+link:#_Toc66089228[Step 2: Selection of Relevant Indicators 26]
+
+link:#_Toc66089229[Step 3: Variable Transformation and Reduction 27]
+
+link:#_Toc66089230[Step 4: Indicator Framework 27]
+
+link:#_Toc66089231[Dimensions of Social Vulnerability 28]
+
+link:#_Toc66089232[Model Validation 30]
+
+link:#_Toc66089233[A Neighbourhood Profile of Vulnerability 31]
+
+link:#_Toc66089234[Natural Hazard Threats 33]
+
+link:#_Toc66089235[Disaster Events in Canada 33]
+
+link:#_Toc66089236[Hazard Threat Profiles 34]
+
+link:#_Toc66089237[Challenges and Limitations 34]
+
+link:#_Toc66089238[Analytic Methods 35]
+
+link:#_Toc66089239[Step 1: Establish Hazard Profiles 36]
+
+link:#_Toc66089240[Step 2: Assess Potential of Direct Physical Damage 37]
+
+link:#_Toc66089241[Step 3: Evaluate Assets at Risk 37]
+
+link:#_Toc66089242[Step 4: Visualize Hazard Threat 38]
+
+link:#_Toc66089243[Floods 39]
+
+link:#_Toc66089244[Riverine Flooding 39]
+
+link:#_Toc66089245[Susceptibility to Flooding 41]
+
+link:#_Toc66089246[Flood Threat 41]
+
+link:#_Toc66089247[Model Validation 43]
+
+link:#_Toc66089248[Wildfire 45]
+
+link:#_Toc66089249[Wildfire Hazards 46]
+
+link:#_Toc66089250[Wildland-Urban-Interface 47]
+
+link:#_Toc66089251[Impact Assessment 48]
+
+link:#_Toc66089252[Wildfire Threat 48]
+
+link:#_Toc66089253[Hurricane 49]
+
+link:#_Toc66089254[Hazard Intensity 50]
+
+link:#_Toc66089255[Damage Potential 50]
+
+link:#_Toc66089256[Hazard Threat 51]
+
+link:#_Toc66089257[Earthquake 52]
+
+link:#_Toc66089258[Hazard Intensity 53]
+
+link:#_Toc66089259[Damage Potential 54]
+
+link:#_Toc66089260[Hazard Threat 55]
+
+link:#_Toc66089261[Summary and Discussion 56]
+
+link:#_Toc66089262[Disaster Risk Trends 56]
+
+link:#_Toc66089263[Study Limitations and Future Work 57]
+
+link:#_Toc66089264[Appendices 58]
+
+link:#_Toc66089265[References 58]
