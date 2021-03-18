@@ -203,6 +203,7 @@ link:#_Toc66089264[Appendices 58]
 link:#_Toc66089265[References 58]
 ////
 
+[.text-justify]
 == Natural Hazard Threats
 
 Natural hazards are deﬁned as any naturally occurring process or phenomena that may pose a threat to public safety, physical assets and/or socioeconomic well-being (United Nations 2016). The severity of a hazard threat is measured by the exposure of people, buildings and/or financial assets to underlying earth system processes that are capable of causing physical damage, injury, loss and/or socioeconomic disruption. It is a general accounting of who and what are in harm’s way but is not equivalent to the more specific concepts of physical vulnerability and risk, which measure cause-effect relationships between hazard intensity and the probability of negative consequences should a hazard event occur at some point in the future.
@@ -565,6 +566,7 @@ Patterns of hazard threat are similar in the Quebec City region where ~922,890 p
 
 These profiles of urban risk for earthquake and related tsunami hazards underscore the challenge of managing seismic risk at a national scale in Canada. The scope and severity of threat are greater than for any of the other hazard considered in this study, yet there is relatively little understanding of the potential impacts and consequences among those who are in a position to do something about it. While we continue to focus efforts on reducing the impacts of more frequent but less severe hazards, the potential for future catastrophic earthquake events looms on the horizon.
 
+[.text-justify]
 == Summary and Discussion
 
 Outputs of this study are intended to provide a baseline for situational awareness of multi-hazard threats at the community level in Canada, and to identify hotspot regions of concern that may warrant more detailed follow-up studies. The framework is based on a detailed physical exposure model for Canada that utilizes a harmonized suite of impact scales to relate hazard intensity values at a given location with expected impacts from future flood, wildfire, hurricane, earthquake and tsunami events. With the exception of wildfire, all probabilistic hazard intensity values are assessed for larger magnitude events that are likely to occur over a 500-year time horizon (AEP=0.2%;10%/50-year) to establish a common baseline for comparison. The vulnerability of physical assets within the wildland-urban-interface (WUI) is assessed using 30-year mean head fire intensity values that reflect the general likelihood of experiencing future wildfire events based on fuel availability, ignition potential, landscape variables and future weather conditions that will determine the capacity of a forest fire to spread over the landscape.
@@ -591,7 +593,7 @@ Earthquake threat is the most significant of all hazards in Canada and has been 
 
 Current trends in disaster risk are likely to continue escalating at current rates or higher into the future. While we can improve our understanding of natural hazards and risk through more detailed models at local and regional scales, the bigger challenge will be in building capabilities and incentives to incorporate this information into the community development process so that it becomes part of the pathway toward a more sustainable future.
 
-[bibliography]
+[bibliography.text-justify]
 == References
 
 - Adams, J., T. Allen, S. Halchuk, and M. Kolaj. 2019. 'Canada's 6th Generation Seismic Hazard Model, as Prepared for the 2020 National Building Code of Canada. 12th Can. Conf', _Earthquake Engineering_.
