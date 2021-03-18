@@ -1,3 +1,17 @@
+---
+authorName: M. Journeay, P. LeSueur, J. Yip, T. Hobbs, W. Chow and C. Wagner, others?
+authorUrl: murray.journeay@canada.ca, etc.
+contentTitle: "Patterns of Human Settlement and Natural Hazard Threat in Canada: Part III: Natural Hazard Landscapes of Canada [DRAFT]"
+dateModified: 2021-03-18
+description: "This is a work-in-progress experimentation of MS Word to Asciidoctor conversion, and figures are likely not the right place, and figure captions are currently missing. [FIXME]"
+noContentTitle: false
+pageclass: wb-prettify all-pre
+subject:
+  en: [Natural Resources Canada]
+  fr: [Ressources naturelles Canada]
+title: "Patterns of Human Settlement and Natural Hazard Threat in Canada: Part III: Natural Hazard Landscapes of Canada"
+---
+
 = Patterns of Human Settlement and Natural Hazard Threat in Canada: Part III: Natural Hazard Landscapes of Canada #*[DRAFT]*#
 :author_1: M. Journeay
 :author_2: P. LeSueur
@@ -19,6 +33,11 @@
 :revremark: This is a work-in-progress experimentation of MS Word to Asciidoctor conversion, and figures are likely not the right place, and figure captions are currently missing. [FIXME]
 :toc:
 :sectanchors:
+
+*Authors: M. Journeay, P. LeSueur, J. Yip, T. Hobbs, W. Chow and C. Wagner, _others?_*
+
+> _This is a work-in-progress experimentation of MS Word to Asciidoctor conversion, and figures are likely not the right place, and figure captions are currently missing. [FIXME]_
+
 
 ////
 == Abstract
