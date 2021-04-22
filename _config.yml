@@ -276,7 +276,7 @@ defaults:
 
 encoding: utf-8 # Make sure the encoding is right
 email: ""
-repo: "https://github.com/OpenDRR/opendrr.github.io"
+repo: "https://github.com/OpenDRR/documentation"
 # service_worker: false # Will turn off the service worker if set to false
 stylesheets:
   - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
