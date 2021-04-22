@@ -3,7 +3,7 @@ altLangPrefix: index
 authorName: Ressources naturelles Canada
 authorUrl: 
 contentTitle: Documentation d'OpenDRR
-dateModified: 2021-02-25
+dateModified: 2021-04-22
 description:
   en: "OpenDRR"
   fr: "OpenDRR"
@@ -12,9 +12,9 @@ layout: page
 noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
-  en: [GV Government and Politics, Government services]
-  fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: OpenDRR - Canada.ca
+  en: [OpenDRR (Open Disaster Risk Reduction) Platform]
+  fr: [OpenDRR (plate-forme ouverte pour la réduction des risques de catastrophes)]
+title: OpenDRR
 ---
 
 # {{ page.contentTitle }}

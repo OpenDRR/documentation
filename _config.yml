@@ -66,8 +66,8 @@ assets: "https://wet-boew.github.io/themes-dist/GCWeb"
 baseurl: "/documentation" # set this to your GitHub project name
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 description:
-  en: "Jekyll variant for GCWeb theme" # English site description and default description
-  fr: "Adaption Jekyll du theme GCWeb" # French site description and default description
+  en: "OpenDRR (Open Disaster Risk Reduction) Platform, NRCan" # English site description and default description
+  fr: "OpenDRR (plate-forme ouverte pour la réduction des risques de catastrophes), RNCan" # French site description and default description
 
 defaults:
   -
@@ -283,6 +283,6 @@ stylesheets:
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin: "anonymous"
 theme-name: GCWeb
-title: "OpenDRR - Canada.ca" # Site name or title
-wetSiteRoot: "https://opendirr.github.io/"
+title: "OpenDRR - NRCan/RNCan" # Site name or title
+wetSiteRoot: "https://opendrr.github.io/"
 leaflet: "leaflet@1.6.0"

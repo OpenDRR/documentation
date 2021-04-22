@@ -1,11 +1,11 @@
 ---
-  contentTitle: Canada.ca
+  contentTitle: OpenDRR
   creator:
-    en: Government of Canada, Service Canada, Citizen Service Branch, Integrated Channel Management, Web Strategies and Product Management
-    fr: Gouvernement du Canada, Service Canada, Direction générale de service aux citoyens, Gestion intégrée des modes de service, Gestion des stratégies et produits Web
+    en: Open Disaster Risk Reduction (OpenDRR) Platform, Geological Survey of Canada, Natural Resources Canada, Government of Canada
+    fr: Plateforme Open Disaster Risk Reduction (OpenDRR), Commission géologique du Canada, Ressources naturelles Canada, Gouvernement du Canada
   description:
-    en: The Government of Canada website is a single point of access to all programs, services, departments, ministries and organizations of the Government of Canada.
-    fr: Le site Web du gouvernement du Canada fournit un point d'accès complet à tous les programmes, services, départements, ministères et organismes du gouvernement du Canada.
+    en: OpenDRR (Open Disaster Risk Reduction) Platform is a project under Natural Resources Canada, Government of Canada. It is middleware between hazard or risk modeling environments like OpenQuake and end users who need to understand and evaluate risk to make economic and policy decisions. Please see https://github.com/OpenDRR/opendrr-platform for more information.
+    fr: OpenDRR, la plate-forme ouverte pour la réduction des risques de catastrophes, est un middleware entre les environnements de modélisation des dangers ou des risques comme OpenQuake et les utilisateurs finaux qui doivent comprendre et évaluer les risques pour prendre des décisions économiques et politiques.
   lang: en
   layout: splashpage
   pageclass: splash
@@ -14,7 +14,7 @@
   stylesheets:
     - href: "https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/messages.min.css"
   subject:
-    en: Government of Canada, services
-    fr: Gouvernement du Canada, services
-  title: Canada.ca
+    en: OpenDRR (Open Disaster Risk Reduction) Platform
+    fr: OpenDRR (plate-forme ouverte pour la réduction des risques de catastrophes)
+  title: OpenDRR
 ---
