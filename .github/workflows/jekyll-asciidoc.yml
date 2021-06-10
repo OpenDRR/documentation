@@ -30,7 +30,11 @@ jobs:
           cat /proc/cpuinfo
           git branch -a
           pwd
-          ls -l /usr/local/bin/bundle
+          ls -l /usr/local/bin/bundle || echo "/usr/local/bin/bundle not found"
+          ls -l /usr/local/bin/bundler || echo "/usr/local/bin/bundler not found"
+          type bundle || echo "type bundle failed"
+          type bundler || echo "type bundler failed"
+
           #ls -lR
           df -h
           free -h
