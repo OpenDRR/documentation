@@ -40,6 +40,11 @@ jobs:
           free -h
           dpkg -l
 
+      - name: Install /usr/bin/bundle (/usr/local/bin/bundle is no more)
+        run: |
+          sudo apt update
+          sudo apt install -y ruby-bundler
+
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
