@@ -1,49 +1,30 @@
+name: Build and deploy Jekyll site
+
 on:
   push:
-    branches: [ gh-pages-source, master ]
+    branches:
+      - 'gh-pages-source'
   pull_request:
-    branches: [ gh-pages-source, master ]
+    branches:
+      - 'gh-pages-source'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
-  jekyll:
-    name: Jekyll with AsciiDoc
-    runs-on: ubuntu-20.04
+  build-and-deploy-jekyll-site:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📂 Checkout code
         uses: actions/checkout@v2
         with:
-          # The branch, tag or SHA to checkout. When checking out the repository that
-          # triggered a workflow, this defaults to the reference or SHA for that event.
-          # Otherwise, uses the default branch.
           ref: gh-pages-source
 
-      # Runs a set of commands using the runners shell
-      - name: Discover some system information
-        run: |
-          date
-          cat /etc/os-release
-          uname -a
-          cat /proc/cpuinfo
-          git branch -a
-          pwd
-          ls -l /usr/local/bin/bundle || echo "/usr/local/bin/bundle not found"
-          ls -l /usr/local/bin/bundler || echo "/usr/local/bin/bundler not found"
-          type bundle || echo "type bundle failed"
-          type bundler || echo "type bundler failed"
-
-          #ls -lR
-          df -h
-          free -h
-          dpkg -l
-
-      - name: Install /usr/bin/bundle (/usr/local/bin/bundle is no more)
-        run: |
-          sudo apt update
-          sudo apt install -y ruby-bundler
+      - name: 💎 setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
 
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
