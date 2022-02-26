@@ -1,19 +1,19 @@
-# Documentation
+# OpenDRR Documentation on GitHub Pages
 
-NOTE: to view the models in the models directory you will need to install Archi -Open Source ArchiMate Modelling. 
+This is the `gh-pages-source` branch of the OpenDRR/documentation repository used to render papers in AsciiDoc format (in the docs/ directory) with Jekyll using the [GCWeb, the WET-BOEW Canada.ca theme](https://wet-boew.github.io/GCWeb/index-en.html).  The web pages are then deployed to the [gh-pages](https://github.com/OpenDRR/documentation/tree/gh-pages) branch, and are served as GitHub Pages at https://opendrr.github.io/documentation/.
 
-Archi can be downloaded at:
+Papers related to the OpenDRR platform include, for example:
 
-https://www.archimatetool.com/
+* [A Federated OpenDRR Platform to Support Disaster Resilience Planning in Canada: High Level Requirements](https://opendrr.github.io/documentation/docs/opendrr-platform.html)
 
-# GitHub Pages
+For other documentation, please visit the [`master`](https://github.com/OpenDRR/documentation) branch at https://github.com/OpenDRR/documentation.
 
-Deploy site on GitHub Pages
+## Generating documentation website using Jekyll with AsciiDoc plugin
 
-* deploy's automatically
+The GitHub Pages are built and deployed automatically using GitHub Actions with the workflow file `.github/workflows/jekyll-asciidoc.yml`.
 
-Deploy locally
+To test locally, use the command:
 
-1. `bundle exec jekyll serve --baseurl ''`
-
-Note this manual integration of Leaflet was taken from: https://robyremzy.github.io/blog/2016/leaflet-inside-a-post/
+```console
+$ bundle exec jekyll serve --baseurl ''
+```
